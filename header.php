@@ -7,7 +7,7 @@
   <?php include __DIR__ . '/inc/base-head.php' ?>
 </head>
 
-<body id="body" class="relative" x-data> 
+<body id="body" class="relative"> 
 
 
 <?php include __DIR__ . '/inc/menu_top.php' ?>

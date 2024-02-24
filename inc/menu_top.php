@@ -14,10 +14,11 @@
           </div>
         </div>
         <div class="flex items-center justify-end">
-          <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden />
-          <label for="hamburger" class="peer-checked:hamburger relative z-[1000] -mr-6 block cursor-pointer p-6 lg:hidden">
-            <div aria-hidden="true" class="m-auto h-0.5 w-8 rounded bg-primary-500 transition duration-300"></div>
-            <div aria-hidden="true" class="m-auto mt-2 h-0.5 w-8 rounded bg-primary-500 transition duration-300"></div>
+          <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
+          <label for="hamburger" class="peer-checked:hamburger relative z-[1000] block cursor-pointer p-6 lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-primary-500" fill="currentColor" viewBox="0 0 256 256">
+              <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+            </svg>
           </label>
           <div class="wrap-menu-top">
             <div class="flex h-full flex-col justify-between lg:flex-row lg:items-center">

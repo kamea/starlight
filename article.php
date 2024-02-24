@@ -14,7 +14,7 @@
     ?>
     <p class="text-slate-500 text-italic">
       Dernière mise à jour : <?php $plxShow->artUpdateDate('#num_day #month #num_year(4) #time') ?>
-      <br /> <?= $plxShow->lang('READING_TIME') . $totalread_Time; ?>
+      <br> <?= $plxShow->lang('READING_TIME') . $totalread_Time; ?>
     </p>
   </div>
   <div class="grid xl:grid-cols-3 gap-8">
@@ -23,10 +23,8 @@
       $check_Thumb = ($plxShow->plxMotor->plxRecord_arts->f('thumbnail'));
       if (!$check_Thumb) {
         echo '<hr class="w-1/4 h-0.5 mb-4 bg-slate-200 border-0 rounded dark:bg-slate-900" />';
-      } else {
-        list($width, $height, $type, $attr) = getimagesize($plxMotor->plxRecord_arts->f('thumbnail'));
-      }
-      $plxShow->artThumbnail('<div class="mx-auto"><img class="mx-auto rounded-lg art_thumbnail" src="#img_url" $attr></div>', true) ?>
+      } else 
+      $plxShow->artThumbnail('<div class="mx-auto"><img class="mx-auto rounded-lg art_thumbnail" src="#img_url" alt="#img_alt" title="#img_title"></div>', true) ?>
       <div class="mx-auto plx_content">
         <?php $plxShow->artContent(); ?>
       </div>
@@ -41,11 +39,11 @@
           $plxShow->lastArtList(
             '<div class="flex flex-col items-center overflow-hidden rounded-lg md:flex-row">
               <a href="#art_url" class="group img_lastArt_Wrap">
-                <img src="#img_url" onerror="omg_No_Thumb(this)" class="archive_thumb" />
+                <img src="#img_url" onerror="omg_No_Thumb(this)" class="archive_thumb" alt="" title="" >
               </a>
               <div class="content_lastArt">
                 <h2 class="text-xl font-semibold mylink">#art_title</h2>
-                <time class="text-slate-500"> #art_date </time>
+                <div class="text-slate-500"> #art_date </div>
                 <div class="text-slate-500">#art_chapo(40)...</div>
                 <div>
                   <a href="#art_url">Lire l\'article</a>

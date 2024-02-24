@@ -12,7 +12,7 @@
           <div class="archive_wrap">
             <a href="<?= $plxShow->artUrl() ?>" class="group relative archive_block_img">
               <?php if ($plxShow->plxMotor->plxRecord_arts->f('thumbnail')) : ?>
-                <img src="<?= $plxShow->artThumbnail('#img_thumb_url'); ?>" class="archive_thumb" />
+                <img src="<?= $plxShow->artThumbnail('#img_thumb_url'); ?>" class="archive_thumb" alt="img_alt" title="img_title">
               <?php else : ?>
                 <div class="archive_no_thumb"></div>
               <?php endif; ?>
@@ -39,5 +39,6 @@
 
     </div>
   </div>
+</div>
 
-    <?php include(dirname(__FILE__) . '/footer.php'); ?>
+<?php include(dirname(__FILE__) . '/footer.php'); ?>

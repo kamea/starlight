@@ -32,15 +32,15 @@
       <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
         <div class="col-span-1">
           <label for="id_name"><?php $plxShow->lang('NAME') ?>* :</label>
-          <input class="input" id="id_name" name="name" type="text" size="20" value="<?php $plxShow->comGet('name', ''); ?>" maxlength="20" required />
+          <input class="input" id="id_name" name="name" type="text" size="20" value="<?php $plxShow->comGet('name', ''); ?>" maxlength="20" required>
         </div>
         <div class="col-span-1">
           <label for="id_mail"><?php $plxShow->lang('EMAIL') ?> :</label>
-          <input class="input" id="id_mail" name="mail" type="text" size="20" value="<?php $plxShow->comGet('mail', ''); ?>" />
+          <input class="input" id="id_mail" name="mail" type="text" size="20" value="<?php $plxShow->comGet('mail', ''); ?>">
         </div>
         <div class="col-span-1">
           <label for="id_site"><?php $plxShow->lang('WEBSITE') ?> :</label>
-          <input class="input" id="id_site" name="site" type="text" size="20" value="<?php $plxShow->comGet('site', ''); ?>" />
+          <input class="input" id="id_site" name="site" type="text" size="20" value="<?php $plxShow->comGet('site', ''); ?>">
         </div>
         <div class="col-span-full">
           <div id="id_answer" class="bg-light-warning"></div>
@@ -53,7 +53,7 @@
         <label for="id_rep"><strong><?php echo $plxShow->lang('ANTISPAM_WARNING') ?></strong></label>
         <div>
           <?php $plxShow->capchaQ(); ?>
-          <input class="dark:bg-purple-600 dark:text-white" id="id_rep" name="rep" type="text" size="2" maxlength="120" style="display: inline" />
+          <input class="dark:bg-purple-600 dark:text-white" id="id_rep" name="rep" type="text" size="2" maxlength="120" style="display: inline">
         </div>
       </div>
       <?php $plxShow->comMessage('
@@ -61,10 +61,10 @@
       #com_message
     </p>
     '); ?> <?php if ($plxShow->plxMotor->aConf['capcha']) : ?> <?php endif; ?>
-      <input type="hidden" id="id_parent" name="parent" value="<?php $plxShow->comGet('parent', ''); ?>" />
-      <input class="cursor-pointer rounded-xl bg-primary-500 p-4 text-lg font-bold text-white" type="submit" value="<?php $plxShow->lang('SEND') ?>" />
+      <input type="hidden" id="id_parent" name="parent" value="<?php $plxShow->comGet('parent', ''); ?>">
+      <input class="cursor-pointer rounded-xl bg-primary-500 p-4 text-lg font-bold text-white" type="submit" value="<?php $plxShow->lang('SEND') ?>">
       <div class="pt-2">
-        <input required type="checkbox" id="rgpd" name="rgpd" value="rgpd" required="" />
+        <input type="checkbox" id="rgpd" name="rgpd" value="rgpd" required>
         <label class="pl-2 italic" for="rgpd">En fournissant votre email, votre pseudo et l'url de votre site
           internet, vous consentez à leur affichage sur ce site. Contactez-nous
           par mail (xxxx_AT_xxxxxxx.fr) si vous souhaitez supprimer vos
