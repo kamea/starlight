@@ -4,7 +4,7 @@
 
 <!-- Menu horizontal des catégories du blog -->
 <div class="container mx-auto pt-12 md:pt-24">
-  <div class="flex justify-center">
+<div class="flex flex-wrap justify-center gap-y-8 lg:gap-0">
     <a class="btn group relative" href="<?php $plxShow->racine() ?>" title="Tous les articles">Tous les articles<p class="nbr_art"><?= $nb_total_art; ?></p></a>
     <?php $plxShow->catList('', '<a id="#cat_id" href="#cat_url" class="btn group relative #cat_status" title="#cat_name">#cat_name
         <p class="nbr_art">#art_nb</p>

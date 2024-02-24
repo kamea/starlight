@@ -1788,6 +1788,10 @@ code {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1814,6 +1818,10 @@ code {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-y-8 {
+  row-gap: 2rem;
 }
 
 .space-x-5 > :not([hidden]) ~ :not([hidden]) {
@@ -2416,6 +2424,10 @@ code {
 
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:gap-0 {
+    gap: 0px;
   }
 
   .lg\:space-x-14 > :not([hidden]) ~ :not([hidden]) {
