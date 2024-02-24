@@ -1,6 +1,6 @@
 <?php include(dirname(__FILE__) . '/header.php'); ?>
 
-<div class="max-w-7xl mx-auto py-12 md:py-24">
+<div class="relative max-w-7xl mx-auto py-12 md:py-24">
   <div class="text-center pb-24 mylink">
     <h1 class="font-bold pb-4"><?php $plxShow->artTitle(); ?></h1>
     <?php $plxShow->lang('WRITTEN_BY'); ?> <?php $plxShow->artAuthor() ?> |
