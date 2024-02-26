@@ -1346,9 +1346,11 @@ a img.art_thumbnail {
 
 .plx_content ol {
   list-style-position: inside;
-  list-style-type: decimal;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+}
+
+.plx_content ol li {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .plx_content a,
@@ -1541,6 +1543,13 @@ code {
   color: rgb(2 132 199 / var(--tw-text-opacity));
 }
 
+/* idéale pour les ancres avec un header fixe - https://developer.mozilla.org/fr/docs/Web/CSS/:target */
+
+h2:target {
+  margin-top: -6rem;
+  padding-top: 6rem;
+}
+
 .visible {
   visibility: visible;
 }
@@ -1694,12 +1703,8 @@ code {
   height: 0.125rem;
 }
 
-.h-40 {
-  height: 10rem;
-}
-
-.h-60 {
-  height: 15rem;
+.h-48 {
+  height: 12rem;
 }
 
 .h-64 {
@@ -1712,14 +1717,6 @@ code {
 
 .h-full {
   height: 100%;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
-.h-48 {
-  height: 12rem;
 }
 
 .w-1\/2 {
@@ -1769,6 +1766,10 @@ code {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.list-decimal {
+  list-style-type: decimal;
 }
 
 .grid-cols-1 {
@@ -1955,10 +1956,6 @@ code {
   --tw-gradient-to: #b1b8f0 var(--tw-gradient-to-position);
 }
 
-.to-rose-300 {
-  --tw-gradient-to: #fda4af var(--tw-gradient-to-position);
-}
-
 .to-slate-100\/0 {
   --tw-gradient-to: rgb(241 245 249 / 0) var(--tw-gradient-to-position);
 }
@@ -1999,6 +1996,11 @@ code {
 
 .p-8 {
   padding: 2rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .px-2 {
@@ -2213,21 +2215,6 @@ code {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.blur-\[106px\] {
-  --tw-blur: blur(106px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur-3xl {
-  --tw-blur: blur(64px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur-\[96px\] {
-  --tw-blur: blur(96px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .blur-\[128px\] {
@@ -2497,6 +2484,18 @@ code {
     grid-column: span 2 / span 2;
   }
 
+  .xl\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .xl\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .xl\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
   .xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2504,6 +2503,16 @@ code {
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .xl\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .xl\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 
@@ -2527,42 +2536,10 @@ code {
     background-color: rgb(2 6 23 / var(--tw-bg-opacity));
   }
 
-  .dark\:from-primary-600 {
-    --tw-gradient-from: #6b5dd0 var(--tw-gradient-from-position);
-    --tw-gradient-to: rgb(107 93 208 / 0) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  }
-
-  .dark\:from-primary-800 {
-    --tw-gradient-from: #4a4093 var(--tw-gradient-from-position);
-    --tw-gradient-to: rgb(74 64 147 / 0) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  }
-
-  .dark\:from-primary-400\/20 {
-    --tw-gradient-from: rgb(145 147 232 / 0.2) var(--tw-gradient-from-position);
-    --tw-gradient-to: rgb(145 147 232 / 0) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  }
-
-  .dark\:from-primary-500\/20 {
-    --tw-gradient-from: rgb(123 118 222 / 0.2) var(--tw-gradient-from-position);
-    --tw-gradient-to: rgb(123 118 222 / 0) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  }
-
   .dark\:from-primary-500 {
     --tw-gradient-from: #7b76de var(--tw-gradient-from-position);
     --tw-gradient-to: rgb(123 118 222 / 0) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  }
-
-  .dark\:to-cyan-400\/20 {
-    --tw-gradient-to: rgb(34 211 238 / 0.2) var(--tw-gradient-to-position);
-  }
-
-  .dark\:to-primary-300\/20 {
-    --tw-gradient-to: rgb(177 184 240 / 0.2) var(--tw-gradient-to-position);
   }
 
   .dark\:to-blue-800 {
@@ -2576,10 +2553,5 @@ code {
 
   .dark\:opacity-30 {
     opacity: 0.3;
-  }
-
-  .dark\:blur-\[128px\] {
-    --tw-blur: blur(128px);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 }

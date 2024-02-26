@@ -258,7 +258,11 @@
   }
 
   .plx_content ol {
-    @apply list-inside list-decimal py-2;
+    @apply list-inside;
+  }
+
+  .plx_content ol li {
+    @apply py-1;
   }
 
   .plx_content a,
@@ -326,5 +330,10 @@
 
   code {
     @apply font-mono text-sky-600;
+  }
+
+  /* idéale pour les ancres avec un header fixe - https://developer.mozilla.org/fr/docs/Web/CSS/:target */
+  h2:target {
+		@apply pt-24 -mt-24
   }
 }
