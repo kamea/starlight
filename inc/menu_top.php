@@ -1,11 +1,12 @@
 <header class="sticky top-0 z-[1000]">
   <div class="relative z-[1000] bg-white dark:bg-slate-900">
-    <div class="px-6 lg:container md:px-12 lg:mx-auto lg:px-6 lg:py-4">
+  <div id="progressBar"></div>
+  <div class="px-6 lg:container md:px-12 lg:mx-auto lg:px-6 lg:py-4">
       <div class="flex items-center justify-between">
         <div class="z-[1000] flex items-center text-lg">
-          <p class="avatar">
+          <span class="avatar">
             <?= substr($plxShow->plxMotor->aConf['title'], 0, 1); ?>
-          </p>
+          </span>
           <div class="ml-3 block min-w-max">
             <p class="text-2xl leading-none"><?php $plxShow->mainTitle(); ?></p>
             <p class="leading-none text-primary-500">

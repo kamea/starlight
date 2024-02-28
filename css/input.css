@@ -218,7 +218,7 @@
   }
 
   .footer {
-    @apply container mx-auto rounded-t-lg bg-primary-500 dark:bg-primary-500/20 text-white p-6;
+    @apply container mx-auto rounded-t-lg bg-primary-500 p-6 text-white dark:bg-primary-500/20;
   }
 
   .footer a {
@@ -239,7 +239,7 @@
   .plx_content pre,
   .plx_content code,
   .plx_content table {
-    @apply my-5;
+    @apply my-4;
   }
 
   .plx_content h2,
@@ -250,7 +250,7 @@
   }
 
   .plx_content blockquote {
-    @apply my-5 border-l-4 border-l-primary-500 bg-primary-500/10 py-2 pl-4;
+    @apply my-4 border-l-4 border-l-primary-500 bg-primary-500/10 py-2 pl-4;
   }
 
   .plx_content ul {
@@ -267,11 +267,11 @@
 
   .plx_content a,
   .mylink a {
-    @apply text-primary-500 underline decoration-primary-500 hover:no-underline underline-offset-4;
+    @apply text-primary-500 underline decoration-primary-500 underline-offset-4 hover:no-underline;
   }
 
   .mylink_invert a {
-    @apply text-white no-underline decoration-inherit hover:underline underline-offset-4;
+    @apply text-white no-underline decoration-inherit underline-offset-4 hover:underline;
   }
 
   .plx_content .hr,
@@ -333,7 +333,24 @@
   }
 
   /* idéale pour les ancres avec un header fixe - https://developer.mozilla.org/fr/docs/Web/CSS/:target */
-  h2:target {
-		@apply pt-24 -mt-24
+  h2:target,
+  div:target {
+    @apply -mt-24 pt-24;
+  }
+
+  #progressBar {
+    @apply absolute bottom-0 left-0 h-0.5 w-0 bg-primary-500;
+  }
+
+  #myList li {
+    @apply border-l-2 border-slate-100 dark:border-slate-800/50 py-1 pl-3;
+  }
+
+  #myList li a {
+    @apply text-primary-500 no-underline decoration-primary-500 underline-offset-4 hover:underline;
+  }
+
+  #myList li.active {
+    @apply font-bold border-l-primary-500;
   }
 }

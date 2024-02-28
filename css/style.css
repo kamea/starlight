@@ -1316,8 +1316,8 @@ a img.art_thumbnail {
   .plx_content pre,
   .plx_content code,
   .plx_content table {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .plx_content h2,
@@ -1328,8 +1328,8 @@ a img.art_thumbnail {
 }
 
 .plx_content blockquote {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-left-width: 4px;
   --tw-border-opacity: 1;
   border-left-color: rgb(123 118 222 / var(--tw-border-opacity));
@@ -1545,9 +1545,53 @@ code {
 
 /* idéale pour les ancres avec un header fixe - https://developer.mozilla.org/fr/docs/Web/CSS/:target */
 
-h2:target {
+h2:target,
+  div:target {
   margin-top: -6rem;
   padding-top: 6rem;
+}
+
+#progressBar {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 0.125rem;
+  width: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(123 118 222 / var(--tw-bg-opacity));
+}
+
+#myList li {
+  border-left-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  #myList li {
+    border-color: rgb(30 41 59 / 0.5);
+  }
+}
+
+#myList li a {
+  --tw-text-opacity: 1;
+  color: rgb(123 118 222 / var(--tw-text-opacity));
+  text-decoration-line: none;
+  text-decoration-color: #7b76de;
+  text-underline-offset: 4px;
+}
+
+#myList li a:hover {
+  text-decoration-line: underline;
+}
+
+#myList li.active {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(123 118 222 / var(--tw-border-opacity));
+  font-weight: 700;
 }
 
 .visible {
@@ -1586,6 +1630,10 @@ h2:target {
   top: 0px;
 }
 
+.top-\[110px\] {
+  top: 110px;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1604,6 +1652,10 @@ h2:target {
 
 .col-span-1 {
   grid-column: span 1 / span 1;
+}
+
+.col-span-6 {
+  grid-column: span 6 / span 6;
 }
 
 .col-span-full {
@@ -1768,8 +1820,16 @@ h2:target {
   cursor: pointer;
 }
 
+.resize {
+  resize: both;
+}
+
 .list-decimal {
   list-style-type: decimal;
+}
+
+.list-none {
+  list-style-type: none;
 }
 
 .grid-cols-1 {
@@ -1862,6 +1922,11 @@ h2:target {
 
 .border-none {
   border-style: none;
+}
+
+.border-primary-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(123 118 222 / var(--tw-border-opacity));
 }
 
 .border-slate-400\/50 {
@@ -2074,8 +2139,16 @@ h2:target {
   padding-bottom: 1rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
 }
 
 .pt-12 {
@@ -2390,6 +2463,14 @@ h2:target {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -2401,6 +2482,10 @@ h2:target {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
@@ -2503,11 +2588,6 @@ h2:target {
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .xl\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 
   .xl\:px-32 {
