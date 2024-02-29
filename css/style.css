@@ -1324,7 +1324,7 @@ a img.art_thumbnail {
   .plx_content h3,
   .plx_content h4,
   .plx_content h5 {
-  margin-top: 2rem;
+  line-height: 1.5;
 }
 
 .plx_content blockquote {
@@ -1687,6 +1687,11 @@ h2:target,
   margin-bottom: 1.25rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .-mt-12 {
   margin-top: -3rem;
 }
@@ -1767,6 +1772,10 @@ h2:target,
   height: 2rem;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1822,10 +1831,6 @@ h2:target,
 
 .resize {
   resize: both;
-}
-
-.list-decimal {
-  list-style-type: decimal;
 }
 
 .list-none {
@@ -1922,11 +1927,6 @@ h2:target,
 
 .border-none {
   border-style: none;
-}
-
-.border-primary-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(123 118 222 / var(--tw-border-opacity));
 }
 
 .border-slate-400\/50 {
@@ -2288,6 +2288,11 @@ h2:target,
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .blur-\[128px\] {

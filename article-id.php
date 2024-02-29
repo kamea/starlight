@@ -27,16 +27,15 @@ $totalread_Time = $read_Time . $timer;
           if (preg_match_all('/<h2>(.*?)<\/h2>/', $contenu, $matches)) {
             $id = 1;
             foreach ($matches[1] as $match) {
-              echo '<li><a href="#heading_' . $id . '" onclick="setActiveLink(\'heading_' . $id . '\')">' . $match . '</a></li>';
+              echo '<li><a href="#heading_' . $id . '" _onclick="setActiveLink(\'heading_' . $id . '\')">' . $match . '</a></li>';
               $contenu = str_replace('<h2>' . $match . '</h2>', '<h2 id="heading_' . $id . '">' . $match . '</h2>', $contenu);
               $id++;
             }
             // Ajoutez le dernier élément
-            echo '<li><a href="#comments" onclick="setActiveLink(\'comments\')">Voir les commentaires</a></li>';
+            // echo '<li><a href="#comments" onclick="setActiveLink(\'comments\')">Voir les commentaires</a></li>';
           }
           ?>
         </ul>
-
       </nav>
     </div>
 
@@ -148,4 +147,32 @@ $totalread_Time = $read_Time . $timer;
       activeLink.parentNode.classList.add('active');
     }
   }
+
+ // Fonction pour activer le li correspondant au h2 lorsque la position est à 200 pixels
+function activateListItemOnScroll() {
+  const article = document.getElementById('article');
+  const headings = article.querySelectorAll('h2');
+  const listItems = document.querySelectorAll('#myList li');
+
+  window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+
+    headings.forEach((heading, index) => {
+      const rect = heading.getBoundingClientRect();
+      const positionFromTop = rect.top;
+
+      if (positionFromTop <= 200) {
+        // Désactivez tous les li
+        listItems.forEach(item => item.classList.remove('active'));
+
+        // Activez le li correspondant au h2
+        listItems[index].classList.add('active');
+      }
+    });
+  });
+}
+
+// Appelez la fonction pour activer le li lors du chargement de la page
+document.addEventListener('DOMContentLoaded', activateListItemOnScroll);
+
 </script>

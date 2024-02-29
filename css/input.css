@@ -74,7 +74,7 @@
     @apply mx-2 block py-2 font-semibold duration-300 xl:flex;
   }
   ul li ul.sub-menu {
-    @apply relative mt-2 hidden w-[280px] rounded-xl bg-slate-50 p-3 text-primary-500 shadow-lg md:absolute xl:mt-8 dark:bg-slate-800;
+    @apply relative mt-2  hidden w-[280px] rounded-xl bg-slate-50 p-3 text-primary-500 shadow-lg md:absolute xl:mt-8 dark:bg-slate-800;
   }
   .sub-menu li {
     @apply my-0;
@@ -246,7 +246,7 @@
   .plx_content h3,
   .plx_content h4,
   .plx_content h5 {
-    @apply mt-8;
+    @apply leading-normal;
   }
 
   .plx_content blockquote {
