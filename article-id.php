@@ -19,9 +19,24 @@ $totalread_Time = $read_Time . $timer;
     </p>
   </div>
 
+  <nav class="fixed top-[20%] left-2 max-w-64">
+        <ul class="list-none" id="myList">
+          <?php
+          if (preg_match_all('/<h2>(.*?)<\/h2>/', $contenu, $matches)) {
+            $id = 1;
+            foreach ($matches[1] as $match) {
+              echo '<li><a class="text-sm py-1 border border-red-500" href="#heading_' . $id . '" _onclick="setActiveLink(\'heading_' . $id . '\')">' . $match . '</a></li>';
+              $contenu = str_replace('<h2>' . $match . '</h2>', '<h2 id="heading_' . $id . '">' . $match . '</h2>', $contenu);
+              $id++;
+            }
+          }
+          ?>
+        </ul>
+      </nav>
+
   <div class="grid xl:grid-cols-12 gap-8">
-    <div class="xl:col-span-3">
-      <nav class="sticky top-[110px] rounded-lg bg-white p-10 dark:bg-slate-900">
+    <!-- <div class="xl:col-span-3">
+      <nav class="sticky top-[110px]">
         <ul class="list-none" id="myList">
           <?php
           if (preg_match_all('/<h2>(.*?)<\/h2>/', $contenu, $matches)) {
@@ -31,16 +46,13 @@ $totalread_Time = $read_Time . $timer;
               $contenu = str_replace('<h2>' . $match . '</h2>', '<h2 id="heading_' . $id . '">' . $match . '</h2>', $contenu);
               $id++;
             }
-            // Ajoutez le dernier élément
-            // echo '<li><a href="#comments" onclick="setActiveLink(\'comments\')">Voir les commentaires</a></li>';
           }
           ?>
         </ul>
-
       </nav>
-    </div>
+    </div> -->
 
-    <div class="xl:col-span-6 px-2 xl:px-0 mylink">
+    <div class="xl:col-start-4 xl:col-span-6 px-2 xl:px-0 mylink">
       <article id="article">
         <?php
         $check_Thumb = ($plxShow->plxMotor->plxRecord_arts->f('thumbnail'));
