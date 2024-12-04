@@ -5,10 +5,10 @@
     <div class="-mx-4 flex">
       <div class="w-full px-4">
         <div class="mx-auto max-w-[400px] text-center">
-          <h2 class="mb-2 text-7xl font-bold leading-none text-white sm:text-8xl md:text-[100px]">
+          <h2 class="mb-2 text-3xl md:text-8xl font-bold leading-none text-white sm:text-8xl md:text-[100px]">
             404
           </h2>
-          <p class="mb-3 py-8 text-[22px] font-semibold leading-tight text-white">
+          <p class="mb-3 py-8 text-2xl font-semibold leading-tight text-white">
             <?php $plxShow->lang("ERROR"); ?>
           </p>
           <a href="<?php $plxShow->racine(); ?>" class="inline-block rounded-lg bg-primary-800 px-6 py-3 text-center text-xl text-white hover:bg-primary-900">
@@ -19,9 +19,11 @@
     </div>
     <div class="absolute left-0 top-0 -z-10 flex h-full w-full items-center justify-between space-x-5 md:space-x-8 lg:space-x-14">
       <div class="mx-auto flex h-full w-1/2">
-        <div class="h-full w-1/2 bg-gradient-to-b from-slate-100/10 to-slate-100/0"></div>
-        <div class="h-full w-1/2 bg-gradient-to-t from-slate-100/10 to-slate-100/0"></div>
+        <div class="h-full w-1/2 bg-gradient-to-b from-primary-100/10 to-primary-100/0"></div>
+        <div class="h-full w-1/2 bg-gradient-to-t from-primary-100/10 to-primary-100/0"></div>
       </div>
     </div>
   </div>
 </section>
+
+<script src="<?php $plxShow->template(); ?>/js/main.js"></script>

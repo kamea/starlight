@@ -20,10 +20,6 @@
     @apply text-4xl xl:text-5xl;
   }
 
-  /* h2:first-of-type {
-    border: none
-  } */
-
   h2 {
     @apply text-3xl xl:text-4xl;
   }
@@ -52,17 +48,17 @@
   }
 
   body {
-    @apply bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-white/80;
+    @apply bg-contrast-50 text-contrast-800 dark:bg-contrast-950 dark:text-white/70;
   }
 
   /* .hamburger div:first-child {
     @apply translate-y-1.5 rotate-45;
   }
   .hamburger div:last-child {
-    @apply -translate-y-1 -rotate-45;
+    @apply -translate-y-1 -rotate-45
   } */
   .wrap-menu-top {
-    @apply fixed inset-0 w-full translate-x-[-100%] bg-white shadow-xl transition duration-300 peer-checked:translate-x-0 lg:static lg:w-auto lg:translate-x-0 lg:border-r-0 lg:bg-transparent lg:shadow-none dark:bg-slate-900 dark:lg:bg-transparent;
+    @apply fixed inset-0 w-full translate-x-[-100%] bg-white shadow-xl transition duration-300 peer-checked:translate-x-0 lg:static lg:w-auto lg:translate-x-0 lg:border-r-0 lg:bg-transparent lg:shadow-none dark:bg-primary-900 dark:lg:bg-transparent;
   }
   .menu-top a {
     @apply no-underline decoration-primary-500 underline-offset-4 hover:underline;
@@ -74,7 +70,7 @@
     @apply mx-2 block py-2 font-semibold duration-300 xl:flex;
   }
   ul li ul.sub-menu {
-    @apply relative mt-2  hidden w-[280px] rounded-xl bg-slate-50 p-3 text-primary-500 shadow-lg md:absolute xl:mt-8 dark:bg-slate-800;
+    @apply relative mt-2  hidden w-[280px] rounded-xl bg-contrast-100 p-3  shadow-lg md:absolute xl:mt-8 dark:bg-contrast-800;
   }
   .sub-menu li {
     @apply my-0;
@@ -83,23 +79,17 @@
     @apply block;
   }
   .avatar {
-    @apply flex h-12 w-12 items-center justify-center rounded-full bg-slate-200 text-4xl font-extrabold text-primary-500 dark:bg-slate-950;
+    @apply flex h-12 w-12 items-center justify-center rounded-xl bg-contrast-200 text-4xl font-extrabold text-primary-500 dark:bg-contrast-950;
   }
+  
   .btn {
-    @apply mx-1.5 inline-flex items-center rounded-lg bg-primary-500 px-6 py-3 font-medium text-white shadow-sm hover:bg-primary-400;
+    @apply mx-1.5 inline-flex items-center rounded-lg bg-primary-500 px-6 py-3 font-medium text-white shadow-sm hover:bg-primary-600;
   }
 
-  .btn.group.active {
+  .btn.active {
     @apply bg-primary-800;
   }
 
-  .btn.group.active > .nbr_art {
-    @apply !-translate-y-7 !opacity-100;
-  }
-
-  .nbr_art {
-    @apply absolute right-0 top-0 inline-flex h-6 w-8 items-center justify-center rounded-md bg-primary-800 text-white opacity-0 transition-all duration-500 group-hover:-translate-y-7 group-hover:opacity-100;
-  }
 
   a img.art_thumbnail {
     @apply h-48 w-full object-cover;
@@ -107,7 +97,11 @@
 
   /*PluXml class */
 
-  .more,
+  .more {
+    @apply inline-block mt-4 text-primary-500 underline decoration-primary-500 underline-offset-4 hover:no-underline;
+  }
+
+    /* .more,
   .button {
     @apply mt-8 block;
   }
@@ -115,7 +109,8 @@
   .more a,
   .button a {
     @apply items-center rounded-lg bg-primary-500 px-6 py-3  text-white hover:bg-primary-600;
-  }
+  } */
+
 
   .pagination {
     @apply relative font-medium;
@@ -136,7 +131,7 @@
   .p_current,
   .p_next,
   .p_last {
-    @apply inline-block rounded-lg bg-slate-200 px-3 py-2 text-primary-500 dark:bg-primary-400/5;
+    @apply inline-block rounded-lg bg-primary-200 px-3 py-2 text-primary-500 dark:bg-primary-400/5;
   }
   .p_last {
     @apply inline-block;
@@ -146,7 +141,7 @@
     @apply relative
   }
   a.p_last:after {
-    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-auto bg-slate-200 flex items-center text-primary-500 content-['_➜'];
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-auto bg-primary-200 flex items-center text-primary-500 content-['_➜'];
 
   } */
 
@@ -157,11 +152,15 @@
   /* Article */
 
   .img_lastArt_Wrap {
-    @apply relative block h-48 w-full shrink-0 self-start overflow-hidden bg-gradient-to-br from-primary-800 to-primary-400 md:h-full md:w-32  lg:w-48;
+    @apply relative block h-24 w-full shrink-0 self-start overflow-hidden bg-gradient-to-br from-primary-800 to-primary-400 md:h-full md:w-16 lg:w-24;
   }
 
-  .content_lastArt {
-    @apply flex w-full flex-col gap-2 bg-white p-4 lg:p-6 dark:bg-slate-900;
+  .content_lastArt, .archive_content {
+    @apply flex w-full flex-col gap-2 p-4 lg:p-6;
+  }
+
+  .art_same_cat, .archive_wrap {
+    @apply flex flex-col items-center overflow-hidden rounded-lg md:flex-row bg-white dark:bg-contrast-900
   }
 
   /* inc / artLoop */
@@ -176,7 +175,7 @@
   /* Archives */
 
   .archive_block_img {
-    @apply block h-48 w-full shrink-0 self-start overflow-hidden bg-slate-100 md:h-full md:w-32 lg:w-48;
+    @apply block h-48 w-full shrink-0 self-start overflow-hidden bg-primary-100 md:h-full md:w-32 lg:w-48;
   }
 
   .archive_thumb {
@@ -188,17 +187,14 @@
   }
 
   .archive_wrap {
-    @apply flex flex-col items-center overflow-hidden rounded-lg md:flex-row;
+    @apply flex flex-col items-center overflow-hidden rounded-lg md:flex-row bg-white dark:bg-contrast-900;
   }
 
-  .archive_content {
-    @apply flex w-full flex-col gap-2 bg-white p-4 lg:p-6 dark:bg-slate-900;
-  }
 
   /* Commentaires */
 
   .input {
-    @apply mt-2 w-full rounded border-0 bg-slate-200 px-3 py-2 outline-none ring-primary-500 transition duration-100 focus:ring dark:bg-slate-900;
+    @apply mt-2 w-full rounded border-0 bg-contrast-100 px-3 py-2 outline-none ring-primary-500 transition duration-100 focus:ring dark:bg-contrast-900;
   }
 
   .level-1 {
@@ -228,7 +224,7 @@
   /** Details / Summary **/
 
   :root {
-    --arrow-down: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%0A%3E%3Cpath d='M6.34317 7.75732L4.92896 9.17154L12 16.2426L19.0711 9.17157L17.6569 7.75735L12 13.4142L6.34317 7.75732Z' fill='gray' /%3E%3C/svg%3E");
+    --arrow-down: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%0A%3E%3Cpath d='M6.34317 7.75732L4.92896 9.17154L12 16.2426L19.0711 9.17157L17.6569 7.75735L12 13.4142L6.34317 7.75732Z' fill='grey' /%3E%3C/svg%3E");
   }
   .plx_content {
     @apply sm:text-lg;
@@ -267,7 +263,7 @@
 
   .plx_content a,
   .mylink a {
-    @apply text-primary-500 underline decoration-primary-500 underline-offset-4 hover:no-underline;
+    @apply text-primary-500 no-underline decoration-primary-500 underline-offset-4 hover:underline;
   }
 
   .mylink_invert a {
@@ -276,7 +272,7 @@
 
   .plx_content .hr,
   .hr {
-    @apply mx-auto my-12 h-0.5 w-96 rounded border-0 bg-slate-200 dark:bg-slate-900;
+    @apply mx-auto my-12 h-0.5 w-96 rounded border-0 bg-primary-200 dark:bg-primary-900;
   }
 
   details {
@@ -298,7 +294,7 @@
     @apply mx-[0.58rem] my-3 pl-3;
   }
   details ul.border-left {
-    @apply border-l border-solid border-l-slate-500;
+    @apply border-l border-solid border-l-primary-500;
   }
   details ul li {
     @apply ml-0;
@@ -313,7 +309,7 @@
   } */
 
   table {
-    @apply w-full table-auto bg-white text-primary-900 dark:border-slate-500 dark:text-white;
+    @apply w-full table-auto bg-white text-primary-900 dark:border-primary-500 dark:text-white;
   }
 
   th {
@@ -321,15 +317,15 @@
   }
 
   td {
-    @apply bg-white p-2 dark:bg-slate-900;
+    @apply bg-white p-2 dark:bg-primary-900;
   }
 
   pre {
-    @apply whitespace-pre-wrap bg-sky-500/10 p-5;
+    @apply whitespace-pre-wrap bg-secondary-500/10 p-5;
   }
 
   code {
-    @apply font-mono text-sky-600;
+    @apply font-mono text-secondary-600;
   }
 
   /* idéale pour les ancres avec un header fixe - https://developer.mozilla.org/fr/docs/Web/CSS/:target */
@@ -343,7 +339,7 @@
   }
 
   #myList li {
-    @apply border-l-2 border-slate-200 py-1 pl-3 dark:border-slate-800/50 my-0.5;
+    @apply border-l-2 border-primary-200 py-1 pl-3 dark:border-primary-800/50 my-0.5;
   }
 
   #myList li a {
@@ -352,5 +348,20 @@
 
   #myList li.active {
     @apply border-l-primary-500 font-bold;
+  }
+
+  .article-clamp{
+    display: -webkit-box;       /* Définit un conteneur flexible */
+    -webkit-box-orient: vertical; /* Définit l'orientation verticale */
+    -webkit-line-clamp: 4;      /* Limite à 3 lignes */
+    overflow: hidden;           /* Cache le contenu qui dépasse */
+  }
+
+  .type-admin {
+    @apply bg-primary-200 dark:bg-primary-800
+  }
+
+  .type-normal {
+    @apply bg-white dark:bg-contrast-900
   }
 }

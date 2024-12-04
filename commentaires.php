@@ -2,8 +2,8 @@
   <div class="mx-auto max-w-4xl" id="comments">
     <p class="title2 py-4"><?php echo $plxShow->artNbCom(); ?></p>
     <?php while ($plxShow->plxMotor->plxRecord_coms->loop()) : ?>
-      <div id="<?php $plxShow->comId(); ?>" class="comment <?php $plxShow->comLevel(); ?> type-<?php $plxShow->comType(); ?> mb-4">
-        <div class="rounded border border-slate-500/30 p-3" id="com-<?php $plxShow->comIndex(); ?>">
+      <div id="<?php $plxShow->comId(); ?>" class="comment <?php $plxShow->comLevel(); ?> mb-4">
+        <div class="rounded border border-primary-500/30 type-<?php $plxShow->comType(); ?> p-3" id="com-<?php $plxShow->comIndex(); ?>">
           <span class="num-com"># <?php echo $plxShow->plxMotor->plxRecord_coms->i + 1 ?></span>
           |
           <time><?php $plxShow->comDate('#num_day #month #num_year(4) -
@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="com-reply py-3">
-          <a class="text-primary-500 underline decoration-indigo-500 hover:no-underline" rel="nofollow" href="<?php $plxShow->artUrl(); ?>#form" onclick="replyCom('<?php $plxShow->comIndex() ?>')">
+          <a class="text-primary-500 underline decoration-primary-500 hover:no-underline" rel="nofollow" href="<?php $plxShow->artUrl(); ?>#form" onclick="replyCom('<?php $plxShow->comIndex() ?>')">
             <?php $plxShow->lang('REPLY'); ?></a>
         </div>
       </div>
@@ -49,11 +49,11 @@
 <?php $plxShow->comGet('content', ''); ?></textarea>
         </div>
       </div>
-      <div class="my-5 rounded-xl bg-purple-300/50 p-5 text-purple-500 dark:bg-purple-500/10">
+      <div class="my-5 rounded-xl bg-secondary-300/50 p-5 text-secondary-500 dark:bg-secondary-500/10">
         <label for="id_rep"><strong><?php echo $plxShow->lang('ANTISPAM_WARNING') ?></strong></label>
         <div>
           <?php $plxShow->capchaQ(); ?>
-          <input class="dark:bg-purple-600 dark:text-white" id="id_rep" name="rep" type="text" size="2" maxlength="120" style="display: inline">
+          <input class="dark:bg-secondary-600 dark:text-white" id="id_rep" name="rep" type="text" size="2" maxlength="120" style="display: inline">
         </div>
       </div>
       <?php $plxShow->comMessage('
@@ -65,10 +65,7 @@
       <input class="cursor-pointer rounded-xl bg-primary-500 p-4 text-lg font-bold text-white" type="submit" value="<?php $plxShow->lang('SEND') ?>">
       <div class="pt-2">
         <input type="checkbox" id="rgpd" name="rgpd" value="rgpd" required>
-        <label class="pl-2 italic" for="rgpd">En fournissant votre email, votre pseudo et l'url de votre site
-          internet, vous consentez à leur affichage sur ce site. Contactez-nous
-          par mail (xxxx_AT_xxxxxxx.fr) si vous souhaitez supprimer vos
-          informations. Consultez notre
+        <label class="pl-2 italic" for="rgpd">En fournissant votre email, votre pseudo et l'URL de votre site internet, vous consentez à leur affichage public sur ce site. Vos données seront utilisées uniquement dans ce cadre et ne seront pas transmises à des tiers sans votre accord. Vous pouvez demander à tout moment leur suppression en nous contactant à l’adresse suivante : [xxxx_AT_xxxxxxx.fr]. Pour en savoir plus sur vos droits et la manière dont vos données sont traitées, consultez notre
           <a href="">politique de confidentialité</a>.</label>
       </div>
     </form>

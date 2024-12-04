@@ -1,7 +1,6 @@
 <header class="sticky top-0 z-[1000]">
-  <div class="relative z-[1000] bg-white dark:bg-slate-900">
-  <div id="progressBar"></div>
-  <div class="px-6 lg:container md:px-12 lg:mx-auto lg:px-6 lg:py-4">
+  <div class="relative z-[1000] bg-white dark:bg-contrast-900">
+    <div class="px-6 lg:container md:px-12 lg:mx-auto lg:px-6 lg:py-4">
       <div class="flex items-center justify-between">
         <div class="z-[1000] flex items-center text-lg">
           <span class="avatar">
@@ -34,16 +33,15 @@
                 </li>
                 ') ?>
               </ul>
-              <div class="px-6 py-8 md:px-12 md:py-16 lg:py-0 lg:pl-6 lg:pr-0">
-                <a href="#" class="block rounded-lg bg-primary-500 px-6 py-3 text-center text-white hover:bg-primary-600">
+                <a href="#" class="btn">
                   Télécharger
                 </a>
-              </div>
-
               <button id="themeToggle" class="text-xl px-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-primary-500 dark:rotate-180 transition-all duration-500" stroke "0.5" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a96,96,0,0,1-96,96,48,48,0,0,1,0-96,48,48,0,0,0,0-96A96,96,0,0,1,224,128Z" opacity="0.2"></path><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM40,128a88.1,88.1,0,0,1,88-88,40,40,0,0,1,0,80A56,56,0,0,0,77.39,200,88,88,0,0,1,40,128Zm88,88a40,40,0,0,1,0-80,56,56,0,0,0,50.61-79.95A88,88,0,0,1,128,216Zm12-40a12,12,0,1,1-12-12A12,12,0,0,1,140,176ZM116,80a12,12,0,1,1,12,12A12,12,0,0,1,116,80Z"></path></svg>
-    </button>
-              
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-primary-500 dark:rotate-180 transition-all duration-700 dark:text-white/80" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M194.82,151.43l-55.09,20.3-20.3,55.09a7.92,7.92,0,0,1-14.86,0l-20.3-55.09-55.09-20.3a7.92,7.92,0,0,1,0-14.86l55.09-20.3,20.3-55.09a7.92,7.92,0,0,1,14.86,0l20.3,55.09,55.09,20.3A7.92,7.92,0,0,1,194.82,151.43Z" opacity="0.2"></path>
+                  <path d="M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88ZM137,164.22a8,8,0,0,0-4.74,4.74L112,223.85,91.78,169A8,8,0,0,0,87,164.22L32.15,144,87,123.78A8,8,0,0,0,91.78,119L112,64.15,132.22,119a8,8,0,0,0,4.74,4.74L191.85,144ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z"></path>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
