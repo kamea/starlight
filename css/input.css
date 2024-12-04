@@ -166,7 +166,11 @@
   /* inc / artLoop */
 
   .no-img_art_loop {
-    @apply relative h-full w-full bg-gradient-to-br from-primary-800 to-primary-400 object-cover transition-all duration-1000 hover:hue-rotate-30;
+    @apply relative h-56 w-full object-cover bg-gradient-to-br from-primary-800 to-primary-400 hover:grayscale duration-700;
+  }
+
+  .my-img_art_loop {
+    @apply h-56 w-full object-cover hover:grayscale duration-700
   }
 
   .infos_art_loop {
@@ -179,11 +183,11 @@
   }
 
   .archive_thumb {
-    @apply absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110;
+    @apply absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:grayscale;
   }
 
   .archive_no_thumb {
-    @apply relative h-full w-full bg-gradient-to-br from-primary-800 to-primary-400 object-cover transition-all duration-1000 hover:hue-rotate-30;
+    @apply relative h-full w-full bg-gradient-to-br from-primary-800 to-primary-400 object-cover transition-all duration-700 hover:grayscale;
   }
 
   .archive_wrap {
@@ -353,7 +357,7 @@
   .article-clamp{
     display: -webkit-box;       /* Définit un conteneur flexible */
     -webkit-box-orient: vertical; /* Définit l'orientation verticale */
-    -webkit-line-clamp: 4;      /* Limite à 3 lignes */
+    -webkit-line-clamp: 3;      /* Limite à 3 lignes */
     overflow: hidden;           /* Cache le contenu qui dépasse */
   }
 

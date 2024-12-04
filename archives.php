@@ -3,7 +3,6 @@
 <div class="relative pt-12 md:pt-24 w-full px-2 xl:px-0">
   <p class="text-5xl text-center"><?php $plxShow->lang('ARCHIVES'); ?></p>
   <p class="text-xl text-center"><?= plxDate::formatDate($plxShow->plxMotor->cible, '#month #num_year(4)') ?></p>
-
   <div class="max-w-7xl mx-auto py-24">
     <div class="mx-auto px-2 xl:px-0">
       <div class="grid sm:grid-cols-2 gap-8">
@@ -21,7 +20,7 @@
               <time datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>">
                 <?php $plxShow->artDate('#num_day #month #num_year(4)'); ?>
               </time>
-              <div class=">
+              <div class="">
                 <span class="mylink"><?php $plxShow->lang('WRITTEN_BY'); ?> <?php $plxShow->artAuthor() ?></span>
                 <span class="mylink"> | <?php $plxShow->artNbCom(); ?></span>
               </div>
@@ -30,14 +29,10 @@
           </div>
         <?php endwhile; ?>
       </div>
-
-
       <nav class="pagination text-center pt-16">
         <?php $plxShow->pagination(); ?>
       </nav>
-
     </div>
   </div>
 </div>
-
 <?php include(dirname(__FILE__) . '/footer.php'); ?>

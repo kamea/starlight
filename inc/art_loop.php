@@ -1,20 +1,16 @@
 <?php while ($plxShow->plxMotor->plxRecord_arts->loop()) :  ?>
-  <div class="mx-3 md:mx-0 group bg-white dark:bg-contrast-900 block flex flex-col">
-    <a aria-label="" class="block h-48 w-full overflow-hidden md:h-64"
-      href="<?php $plxShow->artUrl() ?>">
-      <div class="relative overflow-hidden h-full w-full transition-transform group-hover:scale-105 duration-300 ease-out before:bg-primary-700">
-        <div class="absolute left-0 top-0 z-10 hidden h-full w-[120%] origin-bottom skew-x-6 transform-gpu transition-transform duration-700"></div>
-        <?php
-        // Affiche une miniature si elle existe, sinon un dégradé - #Kamea
-        if ($plxShow->plxMotor->plxRecord_arts->f('thumbnail')) {
-          $plxShow->artThumbnail(
-            '<img class=""src="#img_thumb_url" alt="#img_alt" title="#img_title">',
-            true
-          );
-        } else {
-          echo '<div class="no-img_art_loop"></div>';
-        } ?>
-      </div>
+  <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg bg-white dark:bg-contrast-900">
+    <a href="<?php $plxShow->artUrl() ?>">
+      <?php
+      // Affiche une miniature si elle existe, sinon un dégradé - #Kamea
+      if ($plxShow->plxMotor->plxRecord_arts->f('thumbnail')) {
+        $plxShow->artThumbnail(
+          '<img class="my-img_art_loop" src="#img_thumb_url" alt="#img_alt" title="#img_title">',
+          true
+        );
+      } else {
+        echo '<div class="no-img_art_loop"></div>';
+      } ?>
     </a>
     <div class="p-6 space-y-6 flex grow flex-col">
       <div class="flex items-center justify-between mylink">
@@ -24,7 +20,9 @@
           </svg>
           <dl class="inline align-middle text-contrast-400">
             <dt class="sr-only">Publié le</dt>
-            <dd class="inline"><time datetime="<?php $plxShow->artDate('#num_day #month #num_year(2)'); ?>"><?php $plxShow->artDate('#num_day #month #num_year(2)'); ?></time></dd>
+            <dd class="inline">
+            <time datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>">
+            <?php $plxShow->artDate('#num_day #month #num_year(4)'); ?></time></dd>
           </dl>
         </div>
         <p class="inline align-middle">
@@ -37,7 +35,6 @@
           </span>
         </p>
       </div>
-
       <div class="flex grow flex-col">
         <a aria-label="" href="<?php $plxShow->artUrl() ?>">
           <h3 class="text-xl font-bold mb-2">
@@ -48,17 +45,22 @@
           <?php $plxShow->artChapo(false); ?>
         </div>
       </div>
-        <div class="text-sm">
-          <div class="mylink leading-7">
-            Tags : <?php $plxShow->artTags('<a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a>', ',') ?>
-          </div>
-          <div class="mylink">
-            Catégories : <?php $plxShow->artCat(' | ') ?>
-          </div>
-
+      <div class="text-sm">
+        <div class="flex items-center gap-x-1 mylink">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-contrast-400" viewBox="0 0 256 256" fill="CurrentColor">
+            <path d="M224,56V176c-64,55.43-112-55.43-176,0V56C112,.57,160,111.43,224,56Z" opacity="0.2"></path>
+            <path d="M42.76,50A8,8,0,0,0,40,56V224a8,8,0,0,0,16,0V179.77c26.79-21.16,49.87-9.75,76.45,3.41,16.4,8.11,34.06,16.85,53,16.85,13.93,0,28.54-4.75,43.82-18a8,8,0,0,0,2.76-6V56A8,8,0,0,0,218.76,50c-28,24.23-51.72,12.49-79.21-1.12C111.07,34.76,78.78,18.79,42.76,50ZM216,172.25c-26.79,21.16-49.87,9.74-76.45-3.41-25-12.35-52.81-26.13-83.55-8.4V59.79c26.79-21.16,49.87-9.75,76.45,3.4,25,12.35,52.82,26.13,83.55,8.4Z"></path>
+          </svg><?php $plxShow->artCat(' | ') ?>
+        </div>
+        <div class="flex items-center gap-x-1 mylink">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-contrast-400" viewBox="0 0 256 256" fill="CurrentColor">
+            <path d="M237.66,153,153,237.66a8,8,0,0,1-11.31,0L42.34,138.34A8,8,0,0,1,40,132.69V40h92.69a8,8,0,0,1,5.65,2.34l99.32,99.32A8,8,0,0,1,237.66,153Z" opacity="0.2"></path>
+            <path d="M243.31,136,144,36.69A15.86,15.86,0,0,0,132.69,32H40a8,8,0,0,0-8,8v92.69A15.86,15.86,0,0,0,36.69,144L136,243.31a16,16,0,0,0,22.63,0l84.68-84.68a16,16,0,0,0,0-22.63Zm-96,96L48,132.69V48h84.69L232,147.31ZM96,84A12,12,0,1,1,84,72,12,12,0,0,1,96,84Z"></path>
+          </svg><?php $plxShow->artTags('<a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a>', ',') ?>
         </div>
       </div>
     </div>
+  </article>
 
 
 <?php endwhile; ?>

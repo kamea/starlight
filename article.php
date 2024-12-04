@@ -5,16 +5,10 @@
     <h1 class="font-bold pb-4"><?php $plxShow->artTitle(); ?></h1>
     <?php $plxShow->lang('WRITTEN_BY'); ?> <?php $plxShow->artAuthor() ?> |
     <?php $plxShow->artCat(', ') ?>
-    <?php // Méthode TIME_READ - Compte les mots d'un article complet 'chapo' + 'content' et qui détermine le temps de lecture.
-    // By William K.
-    $word_Count = str_word_count(strip_tags($plxMotor->plxRecord_arts->f('chapo') . $plxMotor->plxRecord_arts->f('content')));
-    $read_Time = ceil($word_Count / 200); // un adulte lit environ 200 mots à la minute
-    $timer = ($read_Time == 1) ? " minute" : " minutes";
-    $totalread_Time = $read_Time . $timer;
-    ?>
     <p class="text-contrast-500 text-italic">
-      Dernière mise à jour : <?php $plxShow->artUpdateDate('#num_day #month #num_year(4) | #time') ?>
-      <br> <?= $plxShow->lang('READING_TIME') . $totalread_Time; ?>
+      Dernière mise à jour : <time datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>">
+        <?php $plxShow->artDate('#num_day #month #num_year(4)'); ?>
+      </time>
     </p>
   </div>
   <div class="grid xl:grid-cols-3 gap-8">
@@ -23,8 +17,8 @@
       $check_Thumb = ($plxShow->plxMotor->plxRecord_arts->f('thumbnail'));
       if (!$check_Thumb) {
         echo '<hr class="w-1/4 h-0.5 mb-4 bg-primary-200 border-0 rounded dark:bg-primary-900" />';
-      } else 
-      $plxShow->artThumbnail('<div class="mx-auto"><img class="mx-auto rounded-lg art_thumbnail" src="#img_url" alt="#img_alt" title="#img_title"></div>', true) ?>
+      } else
+        $plxShow->artThumbnail('<div class="mx-auto"><img class="mx-auto rounded-lg art_thumbnail" src="#img_url" alt="#img_alt" title="#img_title"></div>', true) ?>
       <div class="mx-auto plx_content">
         <?php $plxShow->artContent(); ?>
       </div>

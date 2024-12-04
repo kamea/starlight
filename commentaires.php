@@ -1,24 +1,33 @@
 <?php if (!defined('PLX_ROOT')) exit; ?> <?php if ($plxShow->plxMotor->plxRecord_coms) : ?>
   <div class="mx-auto max-w-4xl" id="comments">
     <p class="title2 py-4"><?php echo $plxShow->artNbCom(); ?></p>
-    <?php while ($plxShow->plxMotor->plxRecord_coms->loop()) : ?>
-      <div id="<?php $plxShow->comId(); ?>" class="comment <?php $plxShow->comLevel(); ?> mb-4">
-        <div class="rounded border border-primary-500/30 type-<?php $plxShow->comType(); ?> p-3" id="com-<?php $plxShow->comIndex(); ?>">
-          <span class="num-com"># <?php echo $plxShow->plxMotor->plxRecord_coms->i + 1 ?></span>
-          |
-          <time><?php $plxShow->comDate('#num_day #month #num_year(4) -
-        #hour:#minute'); ?></time>
-          | <?php $plxShow->comAuthor('link'); ?> <?php $plxShow->lang('SAID'); ?> :
-          <div class="content_com mx-auto max-w-4xl">
-            <?php $plxShow->comContent(); ?>
-          </div>
+
+    <?php while ($plxShow->plxMotor->plxRecord_coms->loop()) { ?>
+      <div class="py-4" id="<?php $plxShow->comId(); ?>" class="comment <?php $plxShow->comLevel(); ?>">
+        <div id="com-<?php $plxShow->comIndex(); ?>">
+          <small>
+            <a class="nbcom" href="<?php $plxShow->ComUrl(); ?>" title="#<?= $plxShow->plxMotor->plxRecord_coms->i + 1 ?>">#<?= $plxShow->plxMotor->plxRecord_coms->i + 1 ?></a>&nbsp;
+            <time datetime="<?php $plxShow->comDate('#num_year(4)-#num_month-#num_day #hour:#minute'); ?>"><?php $plxShow->comDate('#day #num_day #month #num_year(4) - #hour:#minute'); ?></time> -
+            <?php $plxShow->comAuthor('link'); ?>
+            <?php $plxShow->lang('SAID'); ?> :
+          </small>
+          <blockquote>
+            <div class="rounded-lg content_com type-<?php $plxShow->comType(); ?>">
+              <p class="p-3"><?php $plxShow->comContent(); ?></p>
+            </div>
+          </blockquote>
         </div>
-        <div class="com-reply py-3">
-          <a class="text-primary-500 underline decoration-primary-500 hover:no-underline" rel="nofollow" href="<?php $plxShow->artUrl(); ?>#form" onclick="replyCom('<?php $plxShow->comIndex() ?>')">
-            <?php $plxShow->lang('REPLY'); ?></a>
-        </div>
+        <?php if ($plxShow->plxMotor->plxRecord_arts->f('allow_com') and $plxShow->plxMotor->aConf['allow_com']) {
+        ?>
+          <a rel="nofollow" href="<?php $plxShow->artUrl(); ?>#form" onclick="replyCom('<?php $plxShow->comIndex() ?>')"><?php $plxShow->lang('REPLY'); ?></a>
+        <?php
+                                              }
+        ?>
       </div>
-    <?php endwhile; ?>
+    <?php
+                                            } # Fin de la boucle sur les commentaires
+    ?>
+
   </div>
 <?php endif; ?> <?php if (
                   $plxShow->plxMotor->plxRecord_arts->f('allow_com') and

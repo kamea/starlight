@@ -33,9 +33,6 @@
                 </li>
                 ') ?>
               </ul>
-                <a href="#" class="btn">
-                  Télécharger
-                </a>
               <button id="themeToggle" class="text-xl px-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-primary-500 dark:rotate-180 transition-all duration-700 dark:text-white/80" fill="currentColor" viewBox="0 0 256 256">
                   <path d="M194.82,151.43l-55.09,20.3-20.3,55.09a7.92,7.92,0,0,1-14.86,0l-20.3-55.09-55.09-20.3a7.92,7.92,0,0,1,0-14.86l55.09-20.3,20.3-55.09a7.92,7.92,0,0,1,14.86,0l20.3,55.09,55.09,20.3A7.92,7.92,0,0,1,194.82,151.43Z" opacity="0.2"></path>
