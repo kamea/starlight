@@ -14,19 +14,17 @@
   <div class="grid xl:grid-cols-3 gap-8">
     <article class="xl:col-span-2 px-2 xl:px-0 mylink">
       <?php
-      $check_Thumb = ($plxShow->plxMotor->plxRecord_arts->f('thumbnail'));
-      if (!$check_Thumb) {
-        echo '<hr class="w-1/4 h-0.5 mb-4 bg-primary-200 border-0 rounded dark:bg-primary-900" />';
-      } else
-        $plxShow->artThumbnail('<div class="mx-auto"><img class="mx-auto rounded-lg art_thumbnail" src="#img_url" alt="#img_alt" title="#img_title"></div>', true) ?>
-      <div class="mx-auto plx_content">
+      if ($plxShow->plxMotor->plxRecord_arts->f('thumbnail')) {
+        $plxShow->artThumbnail('<div class="mx-auto"><img class="mx-auto rounded-lg art_thumbnail" src="#img_url" alt="#img_alt" title="#img_title"></div>', true);
+      }
+      ?> <div class="mx-auto plx_content">
         <?php $plxShow->artContent(); ?>
       </div>
       <?php $plxShow->artAuthorInfos('<div class="mx-auto py-8">#art_authorinfos</div>'); ?>
       <hr class="hr">
       <div class="mx-auto py-8">
         <div class="text-3xl pb-16 text-primary-500 text-center"><?php $plxShow->lang('ART_SAME_CAT'); ?></div>
-        <div class="grid sm:grid-cols-2 gap-8">
+        <div class="grid md:grid-cols-2 gap-8">
           <?php
           $quellesCategories = $plxShow->plxMotor->plxRecord_arts->f('categorie');
           $quelleCategorie = explode(',', $quellesCategories)[0];

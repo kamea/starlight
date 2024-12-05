@@ -279,6 +279,10 @@
     @apply mx-auto my-12 h-0.5 w-96 rounded border-0 bg-primary-200 dark:bg-primary-900;
   }
 
+  .plx_content img {
+    @apply h-full w-full object-cover object-center 
+  }
+
   details {
     @apply mb-2 block;
   }
