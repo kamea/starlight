@@ -23,7 +23,7 @@
       <?php $plxShow->artAuthorInfos('<div class="mx-auto py-8">#art_authorinfos</div>'); ?>
       <hr class="hr">
       <div class="mx-auto py-8">
-        <div class="text-3xl pb-16 text-primary-500 text-center"><?php $plxShow->lang('ART_SAME_CAT'); ?></div>
+        <div class="text-3xl pb-16 text-primary-600 text-center"><?php $plxShow->lang('ART_SAME_CAT'); ?></div>
         <div class="grid md:grid-cols-2 gap-8">
           <?php
           $quellesCategories = $plxShow->plxMotor->plxRecord_arts->f('categorie');
@@ -35,8 +35,8 @@
               </a>
               <div class="content_lastArt">
                 <h2 class="text-xl font-semibold mylink">#art_title</h2>
-                <div class="text-primary-500"> #art_date </div>
-                <div class="text-primary-500">#art_chapo(40)...</div>
+                <div class="text-primary-600"> #art_date </div>
+                <div class="text-primary-600">#art_chapo(40)...</div>
                 <div>
                   <a href="#art_url">Lire l\'article</a>
                 </div>

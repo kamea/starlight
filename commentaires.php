@@ -34,7 +34,7 @@
                   $plxShow->plxMotor->aConf['allow_com']
                 ) : ?>
   <div id="comments" class="py-4">
-    <div class="pb-16 text-center text-3xl text-primary-500">
+    <div class="pb-16 text-center text-3xl text-primary-600">
       <?php $plxShow->lang('WRITE_A_COMMENT') ?>
     </div>
     <form id="form" action="<?php $plxShow->artUrl(); ?>#form" method="post">
@@ -58,7 +58,7 @@
 <?php $plxShow->comGet('content', ''); ?></textarea>
         </div>
       </div>
-      <div class="my-5 rounded-xl bg-secondary-300/50 p-5 text-secondary-500 dark:bg-secondary-500/10">
+      <div class="my-5 rounded-xl bg-secondary-100 p-5 text-secondary-700 dark:bg-secondary-500/10">
         <label for="id_rep"><strong><?php echo $plxShow->lang('ANTISPAM_WARNING') ?></strong></label>
         <div>
           <?php $plxShow->capchaQ(); ?>
