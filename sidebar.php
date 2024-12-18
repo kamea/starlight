@@ -1,6 +1,6 @@
 <?php if (!defined('PLX_ROOT')) exit; ?>
 
-<aside class="sticky rounded-lg bg-white p-10 dark:bg-contrast-900 mylink" style="top: 110px">
+<aside class="sticky rounded bg-white p-10 dark:bg-contrast-900 mylink" style="top: 110px">
   <details open>
     <summary class="text-xl"><?php $plxShow->lang('CATEGORIES'); ?></summary>
     <ul class="border-l-2 border-primary-400/50">

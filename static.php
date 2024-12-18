@@ -6,7 +6,7 @@
       <article class="mx-auto max-w-5xl" id="static-page-<?php echo $plxShow->staticId(); ?>">
         <div class="text-center">
           <h1 class="pb-3 font-bold"><?php $plxShow->staticTitle(); ?></h1>
-          <p class="flex items-center justify-center text-contrast-500">
+          <p class="flex items-center justify-center">
             <?php $plxShow->lang('UPDATE_DATE'); ?> <?php $plxShow->staticUpdateDate('#day #num_day #month #num_year(2)') ?>
           </p>
         </div>

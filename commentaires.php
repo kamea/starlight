@@ -12,7 +12,7 @@
             <?php $plxShow->lang('SAID'); ?> :
           </small>
           <blockquote>
-            <div class="rounded-lg content_com type-<?php $plxShow->comType(); ?>">
+            <div class="rounded content_com type-<?php $plxShow->comType(); ?>">
               <p class="p-3"><?php $plxShow->comContent(); ?></p>
             </div>
           </blockquote>
@@ -58,7 +58,7 @@
 <?php $plxShow->comGet('content', ''); ?></textarea>
         </div>
       </div>
-      <div class="my-5 rounded-xl bg-secondary-100 p-5 text-secondary-700 dark:bg-secondary-500/10">
+      <div class="my-5 rounded bg-secondary-100 p-5 text-secondary-700 dark:bg-secondary-500/10">
         <label for="id_rep"><strong><?php echo $plxShow->lang('ANTISPAM_WARNING') ?></strong></label>
         <div>
           <?php $plxShow->capchaQ(); ?>
@@ -66,12 +66,12 @@
         </div>
       </div>
       <?php $plxShow->comMessage('
-    <p id="com_message" class="my-4 rounded-xl bg-primary-300/50 p-2 font-bold">
+    <p id="com_message" class="my-4 rounded bg-primary-300/50 p-2 font-bold">
       #com_message
     </p>
     '); ?> <?php if ($plxShow->plxMotor->aConf['capcha']) : ?> <?php endif; ?>
       <input type="hidden" id="id_parent" name="parent" value="<?php $plxShow->comGet('parent', ''); ?>">
-      <input class="cursor-pointer rounded-xl bg-primary-500 p-4 text-lg font-bold text-white" type="submit" value="<?php $plxShow->lang('SEND') ?>">
+      <input class="cursor-pointer rounded bg-primary-500 p-4 text-lg font-bold text-white" type="submit" value="<?php $plxShow->lang('SEND') ?>">
       <div class="pt-2">
         <input type="checkbox" id="rgpd" name="rgpd" value="rgpd" required>
         <label class="pl-2 italic" for="rgpd">En fournissant votre email, votre pseudo et l'URL de votre site internet, vous consentez à leur affichage public sur ce site. Vos données seront utilisées uniquement dans ce cadre et ne seront pas transmises à des tiers sans votre accord. Vous pouvez demander à tout moment leur suppression en nous contactant à l’adresse suivante : [xxxx_AT_xxxxxxx.fr]. Pour en savoir plus sur vos droits et la manière dont vos données sont traitées, consultez notre

@@ -1,7 +1,7 @@
 <?php include dirname(__FILE__) . "/header.php"; ?>
 
 <section class="px-2 pt-12 lg:px-0 lg:pt-24">
-  <div class="relative z-10 mx-auto max-w-5xl rounded-lg bg-primary-500 py-24">
+  <div class="relative z-10 mx-auto max-w-5xl rounded bg-primary-500 py-24">
     <div class="-mx-4 flex">
       <div class="w-full px-4">
         <div class="mx-auto max-w-[400px] text-center">
@@ -11,7 +11,7 @@
           <p class="mb-3 py-8 text-2xl font-semibold leading-tight text-white">
             <?php $plxShow->lang("ERROR"); ?>
           </p>
-          <a href="<?php $plxShow->racine(); ?>" class="inline-block rounded-lg bg-primary-800 px-6 py-3 text-center text-xl text-white hover:bg-primary-900">
+          <a href="<?php $plxShow->racine(); ?>" class="inline-block rounded bg-primary-800 px-6 py-3 text-center text-xl text-white hover:bg-primary-900">
             <?php $plxShow->Lang("HOME"); ?>
           </a>
         </div>

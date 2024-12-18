@@ -3,9 +3,9 @@
 <div class="relative max-w-7xl mx-auto py-12 md:py-24">
   <div class="text-center pb-24 mylink">
     <h1 class="font-bold pb-4"><?php $plxShow->artTitle(); ?></h1>
-    <?php $plxShow->lang('WRITTEN_BY'); ?> <?php $plxShow->artAuthor() ?> |
-    <?php $plxShow->artCat(', ') ?>
-    <p class="text-contrast-500 text-italic">
+    <?php $plxShow->lang('WRITTEN_BY'); ?> <?php $plxShow->artAuthor() ?><span class="mx-2">|</span>
+    <?php $plxShow->artCat(' • ') ?>
+    <p class="text-italic">
       Dernière mise à jour : <time datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>">
         <?php $plxShow->artDate('#num_day #month #num_year(4)'); ?>
       </time>
@@ -15,7 +15,7 @@
     <article class="xl:col-span-2 px-2 xl:px-0 mylink">
       <?php
       if ($plxShow->plxMotor->plxRecord_arts->f('thumbnail')) {
-        $plxShow->artThumbnail('<div class="mx-auto"><img class="mx-auto rounded-lg art_thumbnail" src="#img_url" alt="#img_alt" title="#img_title"></div>', true);
+        $plxShow->artThumbnail('<div class="mx-auto"><img class="mx-auto rounded art_thumbnail" src="#img_url" alt="#img_alt" title="#img_title"></div>', true);
       }
       ?> <div class="mx-auto plx_content">
         <?php $plxShow->artContent(); ?>
@@ -24,7 +24,7 @@
       <hr class="hr">
       <div class="mx-auto py-8">
         <div class="text-3xl pb-16 text-primary-600 text-center"><?php $plxShow->lang('ART_SAME_CAT'); ?></div>
-        <div class="grid md:grid-cols-2 gap-8">
+        <div class="grid gap-8">
           <?php
           $quellesCategories = $plxShow->plxMotor->plxRecord_arts->f('categorie');
           $quelleCategorie = explode(',', $quellesCategories)[0];
@@ -35,8 +35,8 @@
               </a>
               <div class="content_lastArt">
                 <h2 class="text-xl font-semibold mylink">#art_title</h2>
-                <div class="text-primary-600"> #art_date </div>
-                <div class="text-primary-600">#art_chapo(40)...</div>
+                <div>#art_date</div>
+                <div>#art_chapo(120)...</div>
                 <div>
                   <a href="#art_url">Lire l\'article</a>
                 </div>
