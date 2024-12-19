@@ -1,5 +1,5 @@
 <?php while ($plxShow->plxMotor->plxRecord_arts->loop()) :  ?>
-  <article class="overflow-hidden rounded shadow transition hover:shadow-lg bg-white dark:bg-contrast-900">
+  <article class="overflow-hidden rounded bg-white dark:bg-contrast-900">
     <a aria-label="<?php $plxShow->artTitle() ?>" href="<?php $plxShow->artUrl() ?>">
       <?php
       // Affiche une miniature si elle existe, sinon un dégradé - #Kamea
