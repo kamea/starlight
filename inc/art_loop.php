@@ -1,8 +1,8 @@
 <?php while ($plxShow->plxMotor->plxRecord_arts->loop()) :  ?>
-  <article class="overflow-hidden rounded bg-white dark:bg-contrast-900">
+  <article class="wrap_article">
     <a aria-label="<?php $plxShow->artTitle() ?>" href="<?php $plxShow->artUrl() ?>">
       <?php
-      // Affiche une miniature si elle existe, sinon un dégradé - #Kamea
+      // Affiche une miniature si elle existe, sinon un dégradé
       if ($plxShow->plxMotor->plxRecord_arts->f('thumbnail')) {
         $plxShow->artThumbnail(
           '<img class="my-img_art_loop" src="#img_thumb_url" alt="#img_alt" title="#img_title">',
@@ -48,6 +48,4 @@
       </div>
     </div>
   </article>
-
-
 <?php endwhile; ?>
