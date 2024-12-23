@@ -1,13 +1,13 @@
 <?php if (!defined('PLX_ROOT')) exit; ?>
 
-<aside class="sticky rounded bg-white p-10 dark:bg-contrast-900 mylink" style="top: 110px">
+<aside class="wrap_aside mylink" style="top: 110px">
   <details open>
     <summary class="text-xl"><?php $plxShow->lang('CATEGORIES'); ?></summary>
     <ul class="border-l-2 border-primary-400/50">
       <?php $plxShow->catList('', '
       <li id="#cat_id">
         <a class="#cat_status" href="#cat_url" title="#cat_name">#cat_name</a>
-        <span class="ml-2 rounded bg-contrast-100 px-2 font-semibold dark:bg-contrast-950">#art_nb</span>
+        <span class="aside_nbart">#art_nb</span>
       </li>
       '); ?>
     </ul>
@@ -30,7 +30,7 @@
         <?php $plxShow->tagList('
         <li>
           <a href="#tag_url" title="#tag_name">#tag_name</a>
-          <span class="ml-2 rounded bg-primary-50 px-2 font-semibold dark:bg-contrast-950">#nb_art</span>
+          <span class="aside_nbart">#nb_art</span>
         </li>
         ', 20); ?>
     </ul>
@@ -41,7 +41,7 @@
       <?php $plxShow->archList('
       <li id="#archives_id">
         <a class="#archives_status" href="#archives_url" title="#archives_name">#archives_name</a>
-        <span class="ml-2 rounded bg-primary-50 px-2 font-semibold dark:bg-contrast-950">#archives_nbart</span>
+        <span class="aside_nbart">#archives_nbart</span>
       </li>
       '); ?>
     </ul>

@@ -4,8 +4,11 @@
 <?php $plxShow->meta('description') ?>
 <?php $plxShow->meta('keywords') ?>
 <?php $plxShow->meta('author') ?>
-<link rel="icon" href="<?php $plxShow->template(); ?>/img/favicon.png">
-<link rel="shortcut icon" href="<?php $plxShow->template(); ?>/img/favicon.png">
+<link rel="icon" type="image/png" href="<?php $plxShow->template(); ?>/img/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="<?php $plxShow->template(); ?>/img/favicon.svg" />
+<link rel="shortcut icon" href="<?php $plxShow->template(); ?>/img/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="<?php $plxShow->template(); ?>/img/apple-touch-icon.png" />
+<link rel="manifest" href="<?php $plxShow->template(); ?>/img/site.webmanifest" />
 <link rel="stylesheet" href="<?php $plxShow->template(); ?>/css/style.css" media="screen">
 <?php $plxShow->templateCss() ?>
 <?php $plxShow->pluginsCss() ?>

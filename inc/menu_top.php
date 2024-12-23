@@ -21,8 +21,8 @@
             </svg>
           </label>
           <div class="wrap-menu-top">
-            <div class="flex h-full flex-col justify-between lg:flex-row lg:items-center">
-              <ul class="space-y-4 px-6 pt-24 md:px-6 lg:flex lg:space-x-6 lg:space-y-0 lg:pt-0">
+            <div class="wrap-menu-base">
+              <ul class="menu_ul">
                 <?php $plxShow->staticList($plxShow->getLang('HOME'), '
                 <li class="menu-top">
                   <a href="#static_url" aria-label="#static_name" title="#static_name">#static_name</a>

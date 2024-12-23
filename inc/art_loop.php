@@ -39,10 +39,10 @@
         </div>
       </div>
       <div class="text-base">
-        <div class="flex flex-wrap items-center gap-x-2 mylink">
+        <div class="artCat">
         <?php $plxShow->artCat('') ?>
         </div>
-        <div class="flex flex-wrap items-center gap-x-2 mylink opacity-70 italic">
+        <div class="artTag">
         <?php $plxShow->artTags('<a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a>', '') ?>
         </div>
       </div>
