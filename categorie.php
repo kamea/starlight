@@ -4,15 +4,15 @@
 
 <!-- Menu horizontal des catégories du blog -->
 <div class="container mx-auto pt-12 md:pt-24">
-<div class="flex flex-wrap justify-center gap-y-8 lg:gap-0">
+<div class="wrap_btn">
     <a class="btn relative" href="<?php $plxShow->racine() ?>" title="Tous les articles">Tous les articles</a>
     <?php $plxShow->catList('', '<a id="#cat_id" href="#cat_url" class="btn relative #cat_status" title="#cat_name">#cat_name</a>'); ?>
   </div>
 </div>
 
 <!-- Affichage des articles -->
-<div class="fade-in mx-auto max-w-7xl px-2 py-16 xl:px-0">
-  <div class="grid gap-10 sm:grid-cols-2 xl:grid-cols-3">
+<div class="categorie-art">
+  <div class="caterorie-art_grid">
     <!-- On boucle sur les articles-->
      <?php include 'inc/art_loop.php' ?>
   </div>
