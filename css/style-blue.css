@@ -663,7 +663,7 @@ h6,.h6 {
 }
 
 /* * {
-		box-shadow: 0 0 0 1px purple inset;
+		box-shadow: 0 0 0 1px red inset;
 	} */
 
 html {
@@ -1549,22 +1549,22 @@ a img.art_thumbnail {
   color: rgb(96 165 250 / var(--tw-text-opacity, 1));
 }
 
-.plx_content .hr,
-  hr {
+.plx_content hr,
+  .hr {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
   height: 0.125rem;
-  width: 24rem;
+  width: 50%;
   border-radius: 0.25rem;
   border-width: 0px;
   --tw-bg-opacity: 1;
   background-color: rgb(191 219 254 / var(--tw-bg-opacity, 1));
 }
 
-.plx_content .hr:is(.dark *),
-  hr:is(.dark *) {
+.plx_content hr:is(.dark *),
+  .hr:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(30 58 138 / var(--tw-bg-opacity, 1));
 }
