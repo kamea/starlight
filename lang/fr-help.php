@@ -12,16 +12,8 @@
 
 <ul>
 <li>style.css</li>
-    <li>style-blue.css</li>
-    <li>style-gray.css</li>
-    <li>style-green.css</li>
-    <li>style-indigo.css</li>
-    <li>style-orange.css</li>
-    <li>style-pink.css</li>
-    <li>style-red.css</li>
-    <li>style-slate.css</li>
-    <li>style-stone.css</li>
-    <li>style-teal.css</li>
+<li>style-blue.css</li>
+<li>style-slate.css</li>
 </ul>
 
 </div> 

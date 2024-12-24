@@ -1,6 +1,6 @@
-<header class="sticky top-0 z-[1000]">
+<header class="sticky top-0 z-[1100]">
   <div class="relative z-[1000] bg-white dark:bg-contrast-900">
-    <div class="px-6 lg:container md:px-12 lg:mx-auto lg:px-6 lg:py-4">
+    <div class="p-1 md:p-4">
       <div class="flex items-center justify-between">
         <div class="z-[1000] flex items-center text-lg">
           <span class="avatar">
@@ -15,7 +15,7 @@
         </div>
         <div class="flex items-center justify-end">
           <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
-          <label for="hamburger" class="peer-checked:hamburger relative z-[1000] block cursor-pointer p-6 lg:hidden">
+          <label for="hamburger" class="peer-checked:hamburger relative z-[1000] block cursor-pointer p-2 lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-primary-600 w-8 h-8">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
             </svg>
