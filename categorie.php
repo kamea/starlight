@@ -1,4 +1,4 @@
-<?php include(dirname(__FILE__) . '/header.php'); ?>
+<?php include 'header.php'; ?>
 
 <?php $nb_total_art = $plxShow->plxMotor->nbArticles('published'); ?>
 
@@ -14,7 +14,7 @@
 <div class="categorie-art">
   <div class="caterorie-art_grid">
     <!-- On boucle sur les articles-->
-     <?php include 'inc/art_loop.php' ?>
+<?php include 'inc/art_loop.php' ?>
   </div>
 </div>
 
@@ -22,4 +22,4 @@
   <?php $plxShow->pagination(); ?>
 </nav>
 
-<?php include(dirname(__FILE__) . '/footer.php'); ?>
+<?php include 'footer.php'; ?>

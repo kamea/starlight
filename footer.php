@@ -16,7 +16,7 @@
   </div>
 </footer>
 
-<script src="<?php $plxShow->template(); ?>/js/main.js"></script>
+<!-- script src="<?php $plxShow->template(); ?>/js/main.js"></script -->
 
 </body>
 </html>
