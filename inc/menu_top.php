@@ -1,6 +1,6 @@
 <header class="sticky top-0 z-[1100]">
   <div class="relative z-[1000] bg-white dark:bg-contrast-900">
-    <div class="p-1 md:p-4">
+    <div class="p-1 md:p-4 w-full container md:mx-auto">
       <div class="flex items-center justify-between">
         <div class="z-[1000] flex items-center text-lg">
           <span class="avatar">

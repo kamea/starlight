@@ -12,22 +12,28 @@
         echo '<div class="no-img_art_loop"></div>';
       } ?>
     </a>
-    <div class="p-6 space-y-6 flex grow flex-col">
+    <div class="p-6 flex grow flex-col">
       <div class="flex items-center justify-between mylink">
         <div>
-          <dl class="inline align-middle">
+          <dl class="inline">
             <dt class="sr-only">Publié le</dt>
             <dd class="inline">
-            <time datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>">
-            <?php $plxShow->artDate('#num_day #month #num_year(4)'); ?></time></dd>
+              <time datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>">
+                <?php $plxShow->artDate('#num_day #month #num_year(4)'); ?></time>
+            </dd>
           </dl>
         </div>
-        <p class="inline align-middle">
-        <span class="inline font-bold 1">
+        <p class="inline">
+          <span class="inline font-bold">
             <?php $plxShow->artNbCom('#nb', '#nb', '#nb') ?>
           </span>
         </p>
       </div>
+
+      <div class="pb-5 italic mylink">
+          <?php $plxShow->lang('WRITTEN_BY'); ?> <?php $plxShow->artAuthor() ?>
+      </div>
+
       <div class="flex grow flex-col">
         <a aria-label="" href="<?php $plxShow->artUrl() ?>">
           <h3 class="text-xl font-bold mb-2">
@@ -40,10 +46,10 @@
       </div>
       <div class="text-base">
         <div class="artCat">
-        <?php $plxShow->artCat('') ?>
+          <?php $plxShow->artCat('') ?>
         </div>
         <div class="artTag">
-        <?php $plxShow->artTags('<a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a>', '') ?>
+          <?php $plxShow->artTags('<a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a>', '') ?>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-<?php include(dirname(__FILE__) . '/header.php'); ?>
+<?php include 'header.php' ?>
 <?php $nb_total_art = $plxShow->plxMotor->nbArticles('published'); ?>
 <div class="container mx-auto pt-4 md:pt-24">
   <div class="wrap_btn">
@@ -14,7 +14,7 @@
 <nav class="pagination text-center pb-16">
   <?php $plxShow->pagination(); ?>
 </nav>
-<?php include(dirname(__FILE__) . '/footer.php'); ?>
+<?php include 'footer.php' ?>
 
 
 

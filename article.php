@@ -1,4 +1,4 @@
-<?php include(dirname(__FILE__) . '/header.php'); ?>
+<?php include 'header.php' ?>
 
 <div class="relative max-w-7xl mx-auto py-12 md:py-24">
   <div class="text-center pb-24 mylink">
@@ -50,18 +50,18 @@
           ); ?>
           <script>
             function omg_No_Thumb(imgElement) {
-              imgElement.style.display = 'none'; // Masquer l'image en cas d'erreur
-              // ou alors imgElement.src = 'rep/vers/image_de_remplacement.jpg';
+              imgElement.style.display = 'none' // Masquer l'image en cas d'erreur
+              // ou alors imgElement.src = 'rep/vers/image_de_remplacement.jpg'
             }
           </script>
         </div>
       </div>
       <hr class="hr">
-      <?php include(dirname(__FILE__) . '/commentaires.php'); ?>
+      <?php include 'commentaires.php' ?>
     </article>
     <div class="xl:col-span-1">
-      <?php include(dirname(__FILE__) . '/sidebar.php'); ?>
+      <?php include 'sidebar.php' ?>
     </div>
   </div>
 </div>
-<?php include(dirname(__FILE__) . '/footer.php'); ?>
+<?php include 'footer.php' ?>
