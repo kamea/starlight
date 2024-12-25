@@ -1,4 +1,4 @@
-<?php include dirname(__FILE__) . "/header.php"; ?>
+<?php include 'header.php'; ?>
 
 <section class="px-2 pt-12 lg:px-0 lg:pt-24">
   <div class="wrap-error">
@@ -26,4 +26,4 @@
   </div>
 </section>
 
-<script src="<?php $plxShow->template(); ?>/js/main.js"></script>
+<?php include 'footer.php'; ?>

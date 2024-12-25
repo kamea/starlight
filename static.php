@@ -1,4 +1,4 @@
-<?php include __DIR__ . '/header.php'; ?>
+<?php include 'header.php'; ?>
 
 <div class="relative py-12 lg:py-24">
   <div class="mx-auto max-w-5xl px-2 md:px-0">
@@ -18,4 +18,4 @@
   </div>
 </div>
 
-<?php include __DIR__ . '/footer.php'; ?>
+<?php include 'footer.php'; ?>

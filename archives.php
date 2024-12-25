@@ -1,4 +1,4 @@
-<?php include(dirname(__FILE__) . '/header.php'); ?>
+<?php include 'header.php'; ?>
 
 <div class="relative pt-12 md:pt-24 w-full px-2 xl:px-0">
   <p class="text-5xl text-center"><?php $plxShow->lang('ARCHIVES'); ?></p>
@@ -35,4 +35,4 @@
     </div>
   </div>
 </div>
-<?php include(dirname(__FILE__) . '/footer.php'); ?>
+<?php include 'footer.php'; ?>
