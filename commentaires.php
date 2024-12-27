@@ -9,11 +9,11 @@
     <div id="<?php $plxShow->comId(); ?>" class="comment <?php $plxShow->comLevel(); ?>">
       <div class="mt-4" id="com-<?php $plxShow->comIndex(); ?>">
 
-          <a class="nbcom" href="<?php $plxShow->ComUrl(); ?>" title="#<?php echo $plxShow->plxMotor->plxRecord_coms->i + 1 ?>">#<?php echo $plxShow->plxMotor->plxRecord_coms->i + 1 ?></a>&nbsp;
-          <time datetime="<?php $plxShow->comDate('#num_year(4)-#num_month-#num_day #hour:#minute'); ?>"><?php $plxShow->comDate('#day #num_day #month #num_year(4) - #hour:#minute'); ?></time> -
-          <?php $plxShow->comAuthor('link'); ?>
-          <?php $plxShow->lang('SAID'); ?> :
-        
+        <a class="nbcom" href="<?php $plxShow->ComUrl(); ?>" title="#<?php echo $plxShow->plxMotor->plxRecord_coms->i + 1 ?>">#<?php echo $plxShow->plxMotor->plxRecord_coms->i + 1 ?></a>&nbsp;
+        <time datetime="<?php $plxShow->comDate('#num_year(4)-#num_month-#num_day #hour:#minute'); ?>"><?php $plxShow->comDate('#day #num_day #month #num_year(4) - #hour:#minute'); ?></time> -
+        <?php $plxShow->comAuthor('link'); ?>
+        <?php $plxShow->lang('SAID'); ?> :
+
         <blockquote class="p-2">
           <p class="p-4 rounded border border-primary-400 dark:border-primary-800 type-<?php $plxShow->comType(); ?>"><?php $plxShow->comContent(); ?></p>
         </blockquote>
@@ -68,7 +68,7 @@
     </p>
     '); ?> <?php if ($plxShow->plxMotor->aConf['capcha']) : ?> <?php endif; ?>
       <input type="hidden" id="id_parent" name="parent" value="<?php $plxShow->comGet('parent', ''); ?>">
-      
+
       <div class="py-4">
         <input type="checkbox" id="rgpd" name="rgpd" value="rgpd" required>
         <label class="pl-2 italic" for="rgpd">En fournissant votre email, votre pseudo et l'URL de votre site internet, vous consentez à leur affichage public sur ce site. Vos données seront utilisées uniquement dans ce cadre et ne seront pas transmises à des tiers sans votre accord. Vous pouvez demander à tout moment leur suppression en nous contactant à l’adresse suivante : [xxxx_AT_xxxxxxx.fr]. Pour en savoir plus sur vos droits et la manière dont vos données sont traitées, consultez notre

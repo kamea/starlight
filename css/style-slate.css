@@ -683,13 +683,6 @@ body:is(.dark *) {
   color: rgb(255 255 255 / 0.9);
 }
 
-/* .hamburger div:first-child {
-    @apply translate-y-1.5 rotate-45;
-  }
-  .hamburger div:last-child {
-    @apply -translate-y-1 -rotate-45
-  } */
-
 .wrap-menu-top {
   position: fixed;
   inset: 0px;
@@ -933,7 +926,7 @@ a img.art_thumbnail {
      object-fit: cover;
 }
 
-/*PluXml class */
+/* PluXml class */
 
 .more {
   margin-top: 1rem;
@@ -948,16 +941,6 @@ a img.art_thumbnail {
 .more:hover {
   text-decoration-line: none;
 }
-
-/* .more,
-  .button {
-    @apply mt-8 block;
-  }
-
-  .more a,
-  .button a {
-    @apply items-center rounded bg-primary-500 px-6 py-3  text-white hover:bg-primary-600;
-  } */
 
 .pagination {
   position: relative;
@@ -1714,8 +1697,6 @@ code {
   color: rgb(71 85 105 / var(--tw-text-opacity, 1));
 }
 
-/* idéale pour les ancres avec un header fixe - https://developer.mozilla.org/fr/docs/Web/CSS/:target */
-
 h2:target,
   div:target {
   margin-top: -6rem;
@@ -1767,13 +1748,9 @@ h2:target,
 
 .article-clamp{
   display: -webkit-box;
-  /* Définit un conteneur flexible */
   -webkit-box-orient: vertical;
-  /* Définit l'orientation verticale */
   -webkit-line-clamp: 3;
-  /* Limite à 3 lignes */
   overflow: hidden;
-  /* Cache le contenu qui dépasse */
 }
 
 .type-admin {
@@ -2044,12 +2021,6 @@ h2:target,
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
 .rounded {
   border-radius: 0.25rem;
 }
@@ -2181,6 +2152,10 @@ h2:target,
   padding-bottom: 1rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -2203,10 +2178,6 @@ h2:target,
 
 .text-center {
   text-align: center;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .text-2xl {
@@ -2354,6 +2325,11 @@ h2:target,
 
   .md\:inset-0 {
     inset: 0px;
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
