@@ -3,9 +3,9 @@
     <div class="p-1 md:p-4 w-full container md:mx-auto">
       <div class="flex items-center justify-between">
         <div class="z-[1000] flex items-center text-lg">
-          <span class="avatar">
+          <a class="avatar" href="<?php $plxShow->racine() ?>">
             <?= substr($plxShow->plxMotor->aConf['title'], 0, 1); ?>
-          </span>
+          </a>
           <div class="ml-3 block min-w-max">
             <p class="text-2xl leading-none"><?php $plxShow->mainTitle(); ?></p>
             <p class="leading-none text-primary-600 dark:text-primary-500">

@@ -62,6 +62,8 @@ $LANG = array(
 'UPDATE_DATE'        => 'Dernière mise à jour : ',
 'ART_AUTHOR'        => 'Liste des articles rédigés par',
 'ART_SAME_CAT'      => 'Articles dans la même catégorie',
+'ART_PROPOSAL'      => 'Découvrez aussi ces articles',
+'AUTHORS'   => 'Auteurs',
 );
 
 ?>

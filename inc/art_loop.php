@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="text-base">
-        <div class="artCat">
+        <div class="artCat pt-4">
           <?php $plxShow->artCat('') ?>
         </div>
         <div class="artTag">

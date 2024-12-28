@@ -12,22 +12,25 @@
     </p>
   </div>
   <div class="grid xl:grid-cols-3 gap-8">
-    <article class="xl:col-span-2 px-2 xl:px-0 mylink">
-      <?php
-      if ($plxShow->plxMotor->plxRecord_arts->f('thumbnail')) {
-        $plxShow->artThumbnail('<div class="mx-auto"><img class="mx-auto rounded art_thumbnail" src="#img_url" alt="#img_alt" title="#img_title"></div>', true);
-      }
-      ?> <div class="mx-auto plx_content">
-        <?php $plxShow->artContent(); ?>
-      </div>
-      <?php $plxShow->artAuthorInfos('<div class="mx-auto py-8">#art_authorinfos</div>'); ?>
+    <div class="xl:col-span-2 px-2 xl:px-0">
+      <article class="mylink">
+        <?php
+        if ($plxShow->plxMotor->plxRecord_arts->f('thumbnail')) {
+          $plxShow->artThumbnail('<div class="mx-auto"><img class="mx-auto rounded art_thumbnail" src="#img_url" alt="#img_alt" title="#img_title"></div>', true);
+        }
+        ?> <div class="mx-auto plx_content">
+          <?php $plxShow->artContent(); ?>
+        </div>
+        <?php $plxShow->artAuthorInfos('<div class="mx-auto py-8">#art_authorinfos</div>'); ?>
+        <hr class="hr">
+        <?php include 'commentaires.php' ?>
+      </article>
+
       <hr class="hr">
       <div class="mx-auto py-8">
-        <div class="text-3xl pb-16 text-primary-600 text-center"><?php $plxShow->lang('ART_SAME_CAT'); ?></div>
+        <div class="text-3xl pb-16 text-primary-600 text-center"><?php $plxShow->lang('ART_PROPOSAL'); ?></div>
         <div class="grid gap-8">
           <?php
-          $quellesCategories = $plxShow->plxMotor->plxRecord_arts->f('categorie');
-          $quelleCategorie = explode(',', $quellesCategories)[0];
           $plxShow->lastArtList(
             '<div class="art_same_cat">
               <a href="#art_url" class="group img_lastArt_Wrap">
@@ -44,7 +47,7 @@
             </div>
             ',
             2,
-            $quelleCategorie,
+            '',
             '',
             'random'
           ); ?>
@@ -56,9 +59,9 @@
           </script>
         </div>
       </div>
-      <hr class="hr">
-      <?php include 'commentaires.php' ?>
-    </article>
+    </div>
+
+
     <div class="xl:col-span-1">
       <?php include 'sidebar.php' ?>
     </div>

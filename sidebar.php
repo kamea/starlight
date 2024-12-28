@@ -7,7 +7,7 @@
       <?php $plxShow->catList('', '
       <li id="#cat_id">
         <a class="#cat_status" href="#cat_url" title="#cat_name">#cat_name</a>
-        <span class="aside_nbart">#art_nb</span>
+        <span>(#art_nb)</span>
       </li>
       '); ?>
     </ul>
@@ -27,21 +27,32 @@
   <details>
     <summary class="text-xl"><?php $plxShow->lang('TAGS'); ?></summary>
     <ul class="border-l-2 border-primary-400/50">
-        <?php $plxShow->tagList('
+      <?php $plxShow->tagList('
         <li>
           <a href="#tag_url" title="#tag_name">#tag_name</a>
-          <span class="aside_nbart">#nb_art</span>
+          <span>(#nb_art)</span>
         </li>
         ', 20); ?>
     </ul>
   </details>
+  <?php
+  if (method_exists($plxShow, 'authorList')) {
+  ?>
+    <details>
+      <summary class="text-xl"><?php $plxShow->lang('AUTHORS'); ?></summary>
+      <ul class="border-l-2 border-primary-400/50">
+        <?php $plxShow->authorList(); ?>
+      </ul>
+    </details>
+  <?php } ?>
+
   <details>
     <summary class="text-xl"><?php $plxShow->lang('ARCHIVES'); ?></summary>
     <ul class="border-l-2 border-primary-400/50">
       <?php $plxShow->archList('
       <li id="#archives_id">
         <a class="#archives_status" href="#archives_url" title="#archives_name">#archives_name</a>
-        <span class="aside_nbart">#archives_nbart</span>
+        <span>(#archives_nbart)</span>
       </li>
       '); ?>
     </ul>
