@@ -36,6 +36,7 @@ $LANG = array(
 'CLASSIFIED_IN'			=> 'Classé dans',
 'TAGS'					=> 'Mots clés',
 'TAG'					=> 'Articles qui utilisent le mot clé',
+'ALL_ARTICLES'			=> 'Tous les articles',
 
 # commentaires.php
 'SAID'					=> 'a dit',
@@ -61,5 +62,3 @@ $LANG = array(
 'ART_PROPOSAL'          => 'Découvrez aussi ces articles',
 'AUTHORS'               => 'Auteurs',
 );
-
-?>

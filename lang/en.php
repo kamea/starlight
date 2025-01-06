@@ -34,6 +34,7 @@ $LANG = array(
 'WRITTEN_BY'			=> 'Written by',
 'CLASSIFIED_IN'			=> 'Classified in',
 'TAGS'					=> 'Tags',
+'ALL_ARTICLES'			=> 'Every article',
 
 # commentaires.php
 'SAID'					=> 'said',
@@ -56,5 +57,3 @@ $LANG = array(
 'AUTHORS'               => 'Authors',
 
 );
-
-?>
