@@ -46,6 +46,15 @@ $LANG = array(
 'SEND'					=> 'Send',
 'COMMENTS_CLOSED'		=> 'Comments are closed',
 'ANTISPAM_WARNING'		=> 'Anti-spam checking',
+
+# article
+'READING_ART'           => 'Read the article',
+'READING_TIME'          => 'Estimated reading time : ',
+'UPDATE_DATE'           => 'Last update : ',
+'ART_AUTHOR'            => 'List of articles written by',
+'ART_PROPOSAL'          => 'You can also read these articles',
+'AUTHORS'               => 'Authors',
+
 );
 
 ?>

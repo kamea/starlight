@@ -54,16 +54,12 @@ $LANG = array(
 'CANCEL'				=> 'Revenir',
 
 # article
-    
-'ART_DT_UPDT'           => 'Dernière mise à jour : ',
-'L_ARTICLES'            => '',
-'READING_ART'          => 'Lire l\'article',
+'READING_ART'           => 'Lire l\'article',
 'READING_TIME'          => 'Temps de lecture estimé : ',
-'UPDATE_DATE'        => 'Dernière mise à jour : ',
-'ART_AUTHOR'        => 'Liste des articles rédigés par',
-'ART_SAME_CAT'      => 'Articles dans la même catégorie',
-'ART_PROPOSAL'      => 'Découvrez aussi ces articles',
-'AUTHORS'   => 'Auteurs',
+'UPDATE_DATE'           => 'Dernière mise à jour : ',
+'ART_AUTHOR'            => 'Liste des articles rédigés par',
+'ART_PROPOSAL'          => 'Découvrez aussi ces articles',
+'AUTHORS'               => 'Auteurs',
 );
 
 ?>

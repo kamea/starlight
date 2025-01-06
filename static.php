@@ -7,7 +7,11 @@
         <div class="text-center">
           <h1 class="pb-3 font-bold"><?php $plxShow->staticTitle(); ?></h1>
           <p class="flex items-center justify-center">
-            <?php $plxShow->lang('UPDATE_DATE'); ?> <?php $plxShow->staticUpdateDate('#day #num_day #month #num_year(2)') ?>
+          <?php 
+                if(isset($plxShow->plxMotor->aStats[$plxShow->plxMotor->cible]['date_update'])){
+                    $plxShow->lang('UPDATE_DATE');   $plxShow->staticUpdateDate('#day #num_day #month #num_year(2)');
+                  } 
+            ?>
           </p>
         </div>
         <div class="max-w-7xl mx-auto py-8 md:py-16 plx_content">
