@@ -1,51 +1,50 @@
 <?php
-
 $LANG = array(
-
-#header.php
-'MENU'					=> 'Meniu',
-'HOME'					=> 'Home',
-'GOTO_CONTENT'			=> 'La con&#355;inut',
-'GOTO_MENU'				=> 'La meniu',
-'COMMENTS_RSS_FEEDS'	=> 'Flux RSS Comentarii',
-'COMMENTS'				=> 'Comentarii',
-'ARTICLES_RSS_FEEDS'	=> 'Flux RSS Articole',
-'ARTICLES'				=> 'Articole',
-
-# sidebar.php
-'CATEGORIES' 			=> 'Categorii',
-'LATEST_ARTICLES'		=> 'Ultimile Articole',
-'LATEST_COMMENTS'		=> 'Ultimile Comentarii',
-'ARCHIVES'				=> 'Arhiva',
-
-# footer.php
-'POWERED_BY'			=> 'Realizat de',
-'PLUXML_DESCRIPTION'	=> 'Descriere',
-'IN'					=> '&#238;n',
-'ADMINISTRATION'		=> 'Administra&#355;ia',
-'GOTO_TOP'				=> 'Dute sus',
-'TOP'					=> 'Sus',
-
-# erreur.php
-'ERROR'					=> 'A survenit o eroare',
-'BACKTO_HOME'			=> '&#206;napoi la Pagina Principal&#259;',
-
-# common
-'WRITTEN_BY'			=> 'Scris de',
-'CLASSIFIED_IN'			=> 'Postat &#238;n',
-'TAGS'					=> 'Etichete',
-
-# commentaires.php
-'SAID'					=> 'a spus',
-'WRITE_A_COMMENT'		=> 'Adaug&#259; un comentariu',
-'NAME'					=> 'Nume',
-'WEBSITE'				=> 'Site (nu e obligatoriu)',
-'EMAIL'					=> 'E-mail (nu e obligatoriu)',
-'COMMENT'				=> 'Comentariul',
-'CLEAR'					=> 'Cur&#259;&#354;&#259;',
-'SEND'					=> 'Trimite',
-'COMMENTS_CLOSED'		=> 'Comentariile sunt &#238;nchise',
-'ANTISPAM_WARNING'		=> 'Verificare anti-spam',
+	'ADMINISTRATION'			=> 'Administraţia',
+	'ALL_ARTICLES'				=> 'Fiecare articol',
+	'ANTISPAM_WARNING'			=> 'Verificare anti-spam',
+	'ARCHIVES'					=> 'Arhiva',
+	'ARTICLES'					=> 'Articole',
+	'ARTICLES_RSS_FEEDS'		=> 'Flux RSS Articole',
+	'ART_AUTHOR'				=> 'Lista articolelor scrise de',
+	'ART_PROPOSAL'				=> 'Puteți citi și aceste articole',
+	'AUTHORS'					=> 'Autori',
+	'BACKTO_HOME'				=> 'Înapoi la Pagina Principală',
+	'CANCEL'					=> 'Să mă întorc',
+	'CATEGORIES'				=> 'Categorii',
+	'CLASSIFIED_IN'				=> 'Postat în',
+	'CLEAR'						=> 'CurăŢă',
+	'COMMENT'					=> 'Comentariul',
+	'COMMENTS'					=> 'Comentarii',
+	'COMMENTS_ATOM_FEEDS'		=> 'Firul Atom din comentarii',
+	'COMMENTS_CLOSED'			=> 'Comentariile sunt închise',
+	'COMMENTS_RSS_FEEDS'		=> 'Flux RSS Comentarii',
+	'EMAIL'						=> 'E-mail (nu e obligatoriu)',
+	'ERROR'						=> 'A survenit o eroare',
+	'GOTO_CONTENT'				=> 'La conţinut',
+	'GOTO_MENU'					=> 'La meniu',
+	'GOTO_TOP'					=> 'Dute sus',
+	'HOME'						=> 'Home',
+	'IN'						=> 'in',
+	'LAST_ARTICLE'				=> 'Ultimul articol',
+	'LATEST_ARTICLES'			=> 'Ultimile Articole',
+	'LATEST_COMMENTS'			=> 'Ultimile Comentarii',
+	'MENU'						=> 'Meniu',
+	'NAME'						=> 'Nume',
+	'PLUXML_DESCRIPTION'		=> 'Descriere',
+	'POWERED_BY'				=> 'Realizat de',
+	'READING_ART'				=> 'Citiți articolul',
+	'READING_TIME'				=> 'Timp de citire estimat:',
+	'REPLY'						=> 'Răspuns',
+	'REPLY_TO'					=> 'Răspuns la',
+	'SAID'						=> 'a spus',
+	'SEND'						=> 'Trimite',
+	'TAG'						=> 'Articole care folosesc cuvântul cheie',
+	'TAGS'						=> 'Etichete',
+	'TOP'						=> 'Sus',
+	'UPDATE_DATE'				=> 'Ultima actualizare:',
+	'WEBSITE'					=> 'Site (nu e obligatoriu)',
+	'WRITE_A_COMMENT'			=> 'Adaugă un comentariu',
+	'WRITTEN_BY'				=> 'Scris de',
 );
 
-?>

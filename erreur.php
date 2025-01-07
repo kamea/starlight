@@ -12,7 +12,7 @@
             <?php $plxShow->lang("ERROR"); ?>
           </p>
           <a href="<?php $plxShow->racine(); ?>" class="inline-block rounded bg-primary-800 px-6 py-3 text-center text-xl text-white hover:bg-primary-900">
-            <?php $plxShow->Lang("HOME"); ?>
+            <?php $plxShow->lang("HOME"); ?>
           </a>
         </div>
       </div>

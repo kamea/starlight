@@ -1,51 +1,50 @@
 <?php
-
 $LANG = array(
-
-#header.php
-'MENU'					=> 'Menu',
-'HOME'					=> 'Home',
-'GOTO_CONTENT'			=> 'Ga naar inhoud',
-'GOTO_MENU'				=> 'Ga naar menu',
-'COMMENTS_RSS_FEEDS'	=> 'RSS van de commentaren',
-'COMMENTS'				=> 'Commentaren',
-'ARTICLES_RSS_FEEDS'	=> 'RSS van de artikels',
-'ARTICLES'				=> 'Artikels',
-
-# sidebar.php
-'CATEGORIES' 			=> 'Categorieën',
-'LATEST_ARTICLES'		=> 'Laatste artikels',
-'LATEST_COMMENTS'		=> 'Laatste commentaren',
-'ARCHIVES'				=> 'Archief',
-
-# footer.php
-'POWERED_BY'			=> 'Aangemaakt met',
-'PLUXML_DESCRIPTION'	=> 'Blog of Cms zonder databank',
-'IN'					=> 'in',
-'ADMINISTRATION'		=> 'Administratie',
-'GOTO_TOP'				=> 'Ga naar top pagina',
-'TOP'					=> 'Top pagina',
-
-# erreur.php
-'ERROR'					=> 'Er heeft zich een fout voorgedaan',
-'BACKTO_HOME'			=> 'Terug naar onthaalpagina',
-
-# common
-'WRITTEN_BY'			=> 'Geschreven door',
-'CLASSIFIED_IN'			=> 'Geklasseerd in',
-'TAGS'					=> 'Sleutelwoorden',
-
-# commentaires.php
-'SAID'					=> 'zei',
-'WRITE_A_COMMENT'		=> 'commentaar achterlaten',
-'NAME'					=> 'Naam',
-'WEBSITE'				=> 'Site (facultatief)',
-'EMAIL'					=> 'E-mail (facultatief)',
-'COMMENT'				=> 'Commentaar',
-'CLEAR'					=> 'Wissen',
-'SEND'					=> 'Verzenden',
-'COMMENTS_CLOSED'		=> 'Commentaren zijn afgesloten',
-'ANTISPAM_WARNING'		=> 'Anti-spam verificatie',
+	'ADMINISTRATION'			=> 'Administratie',
+	'ALL_ARTICLES'				=> 'Elk artikel',
+	'ANTISPAM_WARNING'			=> 'Anti-spam verificatie',
+	'ARCHIVES'					=> 'Archief',
+	'ARTICLES'					=> 'Artikels',
+	'ARTICLES_RSS_FEEDS'		=> 'RSS van de artikels',
+	'ART_AUTHOR'				=> 'Lijst met artikelen geschreven door',
+	'ART_PROPOSAL'				=> 'U kunt deze artikelen ook lezen',
+	'AUTHORS'					=> 'Auteurs',
+	'BACKTO_HOME'				=> 'Terug naar onthaalpagina',
+	'CANCEL'					=> 'Om terug te komen',
+	'CATEGORIES'				=> 'Categorieën',
+	'CLASSIFIED_IN'				=> 'Geklasseerd in',
+	'CLEAR'						=> 'Wissen',
+	'COMMENT'					=> 'Commentaar',
+	'COMMENTS'					=> 'Commentaren',
+	'COMMENTS_ATOM_FEEDS'		=> 'Atom-thread uit de reacties',
+	'COMMENTS_CLOSED'			=> 'Commentaren zijn afgesloten',
+	'COMMENTS_RSS_FEEDS'		=> 'RSS van de commentaren',
+	'EMAIL'						=> 'E-mail (facultatief)',
+	'ERROR'						=> 'Er heeft zich een fout voorgedaan',
+	'GOTO_CONTENT'				=> 'Ga naar inhoud',
+	'GOTO_MENU'					=> 'Ga naar menu',
+	'GOTO_TOP'					=> 'Ga naar top pagina',
+	'HOME'						=> 'Home',
+	'IN'						=> 'in',
+	'LAST_ARTICLE'				=> 'Laatste artikel',
+	'LATEST_ARTICLES'			=> 'Laatste artikels',
+	'LATEST_COMMENTS'			=> 'Laatste commentaren',
+	'MENU'						=> 'Menu',
+	'NAME'						=> 'Naam',
+	'PLUXML_DESCRIPTION'		=> 'Blog of Cms zonder databank',
+	'POWERED_BY'				=> 'Aangemaakt met',
+	'READING_ART'				=> 'Lees het artikel',
+	'READING_TIME'				=> 'Geschatte leestijd:',
+	'REPLY'						=> 'Antwoord',
+	'REPLY_TO'					=> 'Reageer op',
+	'SAID'						=> 'zei',
+	'SEND'						=> 'Verzenden',
+	'TAG'						=> 'Artikelen waarin het trefwoord wordt gebruikt',
+	'TAGS'						=> 'Sleutelwoorden',
+	'TOP'						=> 'Top pagina',
+	'UPDATE_DATE'				=> 'Laatste update:',
+	'WEBSITE'					=> 'Site (facultatief)',
+	'WRITE_A_COMMENT'			=> 'commentaar achterlaten',
+	'WRITTEN_BY'				=> 'Geschreven door',
 );
 
-?>

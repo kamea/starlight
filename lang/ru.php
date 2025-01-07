@@ -1,51 +1,50 @@
 <?php
-
 $LANG = array(
-
-#header.php
-'MENU'					=> 'меню',
-'HOME'					=> 'Главная',
-'GOTO_CONTENT'			=> 'Перейти к содержанию',
-'GOTO_MENU'				=> 'Перейти к меню',
-'COMMENTS_RSS_FEEDS'	=> 'RSS-каналы комментариев',
-'COMMENTS'				=> 'Комментарии',
-'ARTICLES_RSS_FEEDS'	=> 'Rss-каналы статей',
-'ARTICLES'				=> 'Статьи',
-
-# sidebar.php
-'CATEGORIES' 			=> 'Категории',
-'LATEST_ARTICLES'		=> 'Последние статьи',
-'LATEST_COMMENTS'		=> 'Последние комментарии',
-'ARCHIVES'				=> 'Архив',
-
-# footer.php
-'POWERED_BY'			=> 'Работает на',
-'PLUXML_DESCRIPTION'	=> 'Блог и Cms без баз данных',
-'IN'					=> 'в',
-'ADMINISTRATION'		=> 'Администрация',
-'GOTO_TOP'				=> 'Перейти в верх',
-'TOP'					=> 'Вверх',
-
-# erreur.php
-'ERROR'					=> 'Обнаружена ошибка',
-'BACKTO_HOME'			=> 'Перейти на главную',
-
-# common
-'WRITTEN_BY'			=> 'Автор',
-'CLASSIFIED_IN'			=> 'Частные объявления на',
-'TAGS'					=> 'Тэги',
-
-# commentaires.php
-'SAID'					=> 'сказал',
-'WRITE_A_COMMENT'		=> 'Создать комментарий',
-'NAME'					=> 'Имя',
-'WEBSITE'				=> 'сайта (необязательно)',
-'EMAIL'					=> 'E-mail (необязательно)',
-'COMMENT'				=> 'Комментарий',
-'CLEAR'					=> 'Очистить',
-'SEND'					=> 'Отправить',
-'COMMENTS_CLOSED'		=> 'Комментарии запрещенны',
-'ANTISPAM_WARNING'		=> 'Анти-спам проверка',
+	'ADMINISTRATION'			=> 'Администрация',
+	'ALL_ARTICLES'				=> 'Каждая статья',
+	'ANTISPAM_WARNING'			=> 'Анти-спам проверка',
+	'ARCHIVES'					=> 'Архив',
+	'ARTICLES'					=> 'Статьи',
+	'ARTICLES_RSS_FEEDS'		=> 'Rss-каналы статей',
+	'ART_AUTHOR'				=> 'Список статей, написанных',
+	'ART_PROPOSAL'				=> 'Вы также можете прочитать эти статьи',
+	'AUTHORS'					=> 'Авторы',
+	'BACKTO_HOME'				=> 'Перейти на главную',
+	'CANCEL'					=> 'Вернуться',
+	'CATEGORIES'				=> 'Категории',
+	'CLASSIFIED_IN'				=> 'Частные объявления на',
+	'CLEAR'						=> 'Очистить',
+	'COMMENT'					=> 'Комментарий',
+	'COMMENTS'					=> 'Комментарии',
+	'COMMENTS_ATOM_FEEDS'		=> 'Тема Atom из комментариев',
+	'COMMENTS_CLOSED'			=> 'Комментарии запрещенны',
+	'COMMENTS_RSS_FEEDS'		=> 'RSS-каналы комментариев',
+	'EMAIL'						=> 'E-mail (необязательно)',
+	'ERROR'						=> 'Обнаружена ошибка',
+	'GOTO_CONTENT'				=> 'Перейти к содержанию',
+	'GOTO_MENU'					=> 'Перейти к меню',
+	'GOTO_TOP'					=> 'Перейти в верх',
+	'HOME'						=> 'Главная',
+	'IN'						=> 'в',
+	'LAST_ARTICLE'				=> 'Последняя статья',
+	'LATEST_ARTICLES'			=> 'Последние статьи',
+	'LATEST_COMMENTS'			=> 'Последние комментарии',
+	'MENU'						=> 'меню',
+	'NAME'						=> 'Имя',
+	'PLUXML_DESCRIPTION'		=> 'Блог и Cms без баз данных',
+	'POWERED_BY'				=> 'Работает на',
+	'READING_ART'				=> 'Прочитать статью',
+	'READING_TIME'				=> 'Приблизительное время чтения:',
+	'REPLY'						=> 'Ответ',
+	'REPLY_TO'					=> 'Ответить на',
+	'SAID'						=> 'сказал',
+	'SEND'						=> 'Отправить',
+	'TAG'						=> 'Статьи, в которых используется ключевое слово',
+	'TAGS'						=> 'Тэги',
+	'TOP'						=> 'Вверх',
+	'UPDATE_DATE'				=> 'Последнее обновление:',
+	'WEBSITE'					=> 'сайта (необязательно)',
+	'WRITE_A_COMMENT'			=> 'Создать комментарий',
+	'WRITTEN_BY'				=> 'Автор',
 );
 
-?>

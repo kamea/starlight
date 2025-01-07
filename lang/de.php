@@ -1,51 +1,50 @@
 <?php
-
 $LANG = array(
-
-#header.php
-'MENU'					=> 'Menü',
-'HOME'					=> 'Startseite',
-'GOTO_CONTENT'			=> 'Zum Inhalt',
-'GOTO_MENU'				=> 'Zum Men&uuml;',
-'COMMENTS_RSS_FEEDS'	=> 'Kommentare als Feed',
-'COMMENTS'				=> 'Kommentare',
-'ARTICLES_RSS_FEEDS'	=> 'Artikel-Feed (RSS)',
-'ARTICLES'				=> 'Artikel',
-
-# sidebar.php
-'CATEGORIES' 			=> 'Kategorien',
-'LATEST_ARTICLES'		=> 'Letzte Artikel',
-'LATEST_COMMENTS'		=> 'Letzte Kommentare',
-'ARCHIVES'				=> 'Archive',
-
-# footer.php
-'POWERED_BY'			=> 'Powered by',
-'PLUXML_DESCRIPTION'	=> 'Blog oder Cms ohne Datenbank',
-'IN'					=> 'in',
-'ADMINISTRATION'		=> 'Admin',
-'GOTO_TOP'				=> 'Zum Seitenanfang',
-'TOP'					=> 'Top',
-
-# erreur.php
-'ERROR'					=> 'Ein Fehler ist erkannt geworden',
-'BACKTO_HOME'			=> 'Zur&uuml;ck zur Homepage',
-
-# common
-'WRITTEN_BY'			=> 'Geschrieben von',
-'CLASSIFIED_IN'			=> 'Kategorisiert in',
-'TAGS'					=> 'Schl&uuml;sselw&ouml;rter',
-
-# commentaires.php
-'SAID'					=> 'sagte',
-'WRITE_A_COMMENT'		=> 'Schreiben einen Kommentar',
-'NAME'					=> 'Name',
-'WEBSITE'				=> 'Website (fakultativ)',
-'EMAIL'					=> 'E-mail (fakultativ)',
-'COMMENT'				=> 'Kommentar',
-'CLEAR'					=> 'L&ouml;schen',
-'SEND'					=> 'Versenden',
-'COMMENTS_CLOSED'		=> 'Die Kommentare sind geschlossen',
-'ANTISPAM_WARNING'		=> 'Anti-Spam',
+	'ADMINISTRATION'			=> 'Admin',
+	'ALL_ARTICLES'				=> 'Jeder Artikel',
+	'ANTISPAM_WARNING'			=> 'Anti-Spam',
+	'ARCHIVES'					=> 'Archive',
+	'ARTICLES'					=> 'Artikel',
+	'ARTICLES_RSS_FEEDS'		=> 'Artikel-Feed (RSS)',
+	'ART_AUTHOR'				=> 'Liste der Artikel von',
+	'ART_PROPOSAL'				=> 'Sie können diese Artikel auch lesen',
+	'AUTHORS'					=> 'Autoren',
+	'BACKTO_HOME'				=> 'Zurück zur Homepage',
+	'CANCEL'					=> 'Um zurückzukommen',
+	'CATEGORIES'				=> 'Kategorien',
+	'CLASSIFIED_IN'				=> 'Kategorisiert in',
+	'CLEAR'						=> 'Löschen',
+	'COMMENT'					=> 'Kommentar',
+	'COMMENTS'					=> 'Kommentare',
+	'COMMENTS_ATOM_FEEDS'		=> 'Atom-Thread aus den Kommentaren',
+	'COMMENTS_CLOSED'			=> 'Die Kommentare sind geschlossen',
+	'COMMENTS_RSS_FEEDS'		=> 'Kommentare als Feed',
+	'EMAIL'						=> 'E-mail (fakultativ)',
+	'ERROR'						=> 'Ein Fehler ist erkannt geworden',
+	'GOTO_CONTENT'				=> 'Zum Inhalt',
+	'GOTO_MENU'					=> 'Zum Menü',
+	'GOTO_TOP'					=> 'Zum Seitenanfang',
+	'HOME'						=> 'Startseite',
+	'IN'						=> 'in',
+	'LAST_ARTICLE'				=> 'Neuester Artikel',
+	'LATEST_ARTICLES'			=> 'Letzte Artikel',
+	'LATEST_COMMENTS'			=> 'Letzte Kommentare',
+	'MENU'						=> 'Menü',
+	'NAME'						=> 'Name',
+	'PLUXML_DESCRIPTION'		=> 'Blog oder Cms ohne Datenbank',
+	'POWERED_BY'				=> 'Powered by',
+	'READING_ART'				=> 'Lesen Sie den Artikel',
+	'READING_TIME'				=> 'Geschätzte Lesezeit:',
+	'REPLY'						=> 'Antworten',
+	'REPLY_TO'					=> 'Antworten auf',
+	'SAID'						=> 'sagte',
+	'SEND'						=> 'Versenden',
+	'TAG'						=> 'Artikel, die das Schlüsselwort verwenden',
+	'TAGS'						=> 'Schlüsselwörter',
+	'TOP'						=> 'Top',
+	'UPDATE_DATE'				=> 'Letzte Aktualisierung:',
+	'WEBSITE'					=> 'Website (fakultativ)',
+	'WRITE_A_COMMENT'			=> 'Schreiben einen Kommentar',
+	'WRITTEN_BY'				=> 'Geschrieben von',
 );
 
-?>

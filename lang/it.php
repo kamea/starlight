@@ -1,51 +1,50 @@
 <?php
-
 $LANG = array(
-
-#header.php
-'MENU'					=> 'Menu',
-'HOME'					=> 'Home',
-'GOTO_CONTENT'			=> 'Vai al contenuto',
-'GOTO_MENU'				=> 'Vai al menu',
-'COMMENTS_RSS_FEEDS'	=> 'Feed dei commenti',
-'COMMENTS'				=> 'Commenti',
-'ARTICLES_RSS_FEEDS'	=> 'Feed degli articoli',
-'ARTICLES'				=> 'Articoli',
-
-# sidebar.php
-'CATEGORIES' 			=> 'Categorie',
-'LATEST_ARTICLES'		=> 'Ultimi articoli',
-'LATEST_COMMENTS'		=> 'Ultimi commenti',
-'ARCHIVES'				=> 'Archivio',
-
-# footer.php
-'POWERED_BY'			=> 'Powered by',
-'PLUXML_DESCRIPTION'	=> 'Blog o Cms senza database',
-'IN'					=> 'in',
-'ADMINISTRATION'		=> 'Amministrazione',
-'GOTO_TOP'				=> 'Ritorna in alto',
-'TOP'					=> 'Inizio',
-
-# erreur.php
-'ERROR'					=> 'E&egrave; stato rilevato un errore',
-'BACKTO_HOME'			=> 'Ritorna alla pagina principale',
-
-# common
-'WRITTEN_BY'			=> 'Pubblicato da',
-'CLASSIFIED_IN'			=> 'Categoria',
-'TAGS'					=> 'Tag',
-
-# commentaires.php
-'SAID'					=> 'ha detto',
-'WRITE_A_COMMENT'		=> 'Scrivi',
-'NAME'					=> 'Nome',
-'WEBSITE'				=> 'Sito (facoltativo)',
-'EMAIL'					=> 'Email (facoltativo)',
-'COMMENT'				=> 'Commento',
-'CLEAR'					=> 'Cancella',
-'SEND'					=> 'Invia',
-'COMMENTS_CLOSED'		=> 'Commenti bloccati',
-'ANTISPAM_WARNING'		=> 'Verifica antispam',
+	'ADMINISTRATION'			=> 'Amministrazione',
+	'ALL_ARTICLES'				=> 'Ogni articolo',
+	'ANTISPAM_WARNING'			=> 'Verifica antispam',
+	'ARCHIVES'					=> 'Archivio',
+	'ARTICLES'					=> 'Articoli',
+	'ARTICLES_RSS_FEEDS'		=> 'Feed degli articoli',
+	'ART_AUTHOR'				=> 'Elenco degli articoli scritti da',
+	'ART_PROPOSAL'				=> 'Puoi anche leggere questi articoli',
+	'AUTHORS'					=> 'Autori',
+	'BACKTO_HOME'				=> 'Ritorna alla pagina principale',
+	'CANCEL'					=> 'Tornare',
+	'CATEGORIES'				=> 'Categorie',
+	'CLASSIFIED_IN'				=> 'Categoria',
+	'CLEAR'						=> 'Cancella',
+	'COMMENT'					=> 'Commento',
+	'COMMENTS'					=> 'Commenti',
+	'COMMENTS_ATOM_FEEDS'		=> 'Discussione Atom dai commenti',
+	'COMMENTS_CLOSED'			=> 'Commenti bloccati',
+	'COMMENTS_RSS_FEEDS'		=> 'Feed dei commenti',
+	'EMAIL'						=> 'Email (facoltativo)',
+	'ERROR'						=> 'Eè stato rilevato un errore',
+	'GOTO_CONTENT'				=> 'Vai al contenuto',
+	'GOTO_MENU'					=> 'Vai al menu',
+	'GOTO_TOP'					=> 'Ritorna in alto',
+	'HOME'						=> 'Home',
+	'IN'						=> 'pollici',
+	'LAST_ARTICLE'				=> 'Ultimo articolo',
+	'LATEST_ARTICLES'			=> 'Ultimi articoli',
+	'LATEST_COMMENTS'			=> 'Ultimi commenti',
+	'MENU'						=> 'Menu',
+	'NAME'						=> 'Nome',
+	'PLUXML_DESCRIPTION'		=> 'Blog o Cms senza database',
+	'POWERED_BY'				=> 'Powered by',
+	'READING_ART'				=> 'Leggi l&#39;articolo',
+	'READING_TIME'				=> 'Tempo di lettura stimato:',
+	'REPLY'						=> 'Risposta',
+	'REPLY_TO'					=> 'Rispondi a',
+	'SAID'						=> 'ha detto',
+	'SEND'						=> 'Invia',
+	'TAG'						=> 'Articoli che utilizzano la parola chiave',
+	'TAGS'						=> 'Tag',
+	'TOP'						=> 'Inizio',
+	'UPDATE_DATE'				=> 'Ultimo aggiornamento:',
+	'WEBSITE'					=> 'Sito (facoltativo)',
+	'WRITE_A_COMMENT'			=> 'Scrivi',
+	'WRITTEN_BY'				=> 'Pubblicato da',
 );
 
-?>

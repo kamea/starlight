@@ -1,51 +1,50 @@
 <?php
-
 $LANG = array(
-
-#header.php
-'MENU'					=> 'Menu',
-'HOME'					=> 'Acuèlh',
-'GOTO_CONTENT'			=> 'Anar al contengut',
-'GOTO_MENU'				=> 'Anar al menú',
-'COMMENTS_RSS_FEEDS'	=> 'Fil Rss dels comentaris',
-'COMMENTS'				=> 'Fil dels comentaris',
-'ARTICLES_RSS_FEEDS'	=> 'Fil Rss dels articles',
-'ARTICLES'				=> 'Fil dels articles',
-
-# sidebar.php
-'CATEGORIES' 			=> 'Categorias',
-'LATEST_ARTICLES'		=> 'Darrièrs articles',
-'LATEST_COMMENTS'		=> 'Darrièrs comentaris',
-'ARCHIVES'				=> 'Archius',
-
-# footer.php
-'POWERED_BY'			=> 'Generat per',
-'PLUXML_DESCRIPTION'	=> 'Blòg o Cms sens basa de donadas',
-'IN'					=> 'en',
-'ADMINISTRATION'		=> 'Administracion',
-'GOTO_TOP'				=> 'Pujar amont',
-'TOP'					=> 'Naut de pagina',
-
-# erreur.php
-'ERROR'					=> 'La pagina qu’avètz demandada existís pas',
-'BACKTO_HOME'			=> 'Tornar a la pagina d’acuèlh',
-
-# common
-'WRITTEN_BY'			=> 'Redigit per',
-'CLASSIFIED_IN'			=> 'Classat dins',
-'TAGS'					=> 'Mots claus',
-
-# commentaires.php
-'SAID'					=> 'a dich',
-'WRITE_A_COMMENT'		=> 'Escriure un comentari',
-'NAME'					=> 'Vòstre nom o pseudò',
-'WEBSITE'				=> 'Vòstre siti Internet (facultatiu)',
-'EMAIL'					=> 'Vòstre corric (facultatiu)',
-'COMMENT'				=> 'Contengut de vòstre messatge',
-'CLEAR'					=> 'Escafar',
-'SEND'					=> 'Mandar vòstre comentari',
-'COMMENTS_CLOSED'		=> 'Los comentaris son barrats',
-'ANTISPAM_WARNING'		=> 'Verificacion anti-spam',
+	'ADMINISTRATION'			=> 'Administracion',
+	'ALL_ARTICLES'				=> 'Cada article',
+	'ANTISPAM_WARNING'			=> 'Verificacion anti-spam',
+	'ARCHIVES'					=> 'Archius',
+	'ARTICLES'					=> 'Fil dels articles',
+	'ARTICLES_RSS_FEEDS'		=> 'Fil Rss dels articles',
+	'ART_AUTHOR'				=> 'Lista dels articles escrichs per',
+	'ART_PROPOSAL'				=> 'Podètz tanben legir aqueles articles',
+	'AUTHORS'					=> 'Autors',
+	'BACKTO_HOME'				=> 'Tornar a la pagina d’acuèlh',
+	'CANCEL'					=> 'Per tornar',
+	'CATEGORIES'				=> 'Categorias',
+	'CLASSIFIED_IN'				=> 'Classat dins',
+	'CLEAR'						=> 'Escafar',
+	'COMMENT'					=> 'Contengut de vòstre messatge',
+	'COMMENTS'					=> 'Fil dels comentaris',
+	'COMMENTS_ATOM_FEEDS'		=> 'Atom fil dels comentaris',
+	'COMMENTS_CLOSED'			=> 'Los comentaris son barrats',
+	'COMMENTS_RSS_FEEDS'		=> 'Fil Rss dels comentaris',
+	'EMAIL'						=> 'Vòstre corric (facultatiu)',
+	'ERROR'						=> 'La pagina qu’avètz demandada existís pas',
+	'GOTO_CONTENT'				=> 'Anar al contengut',
+	'GOTO_MENU'					=> 'Anar al menú',
+	'GOTO_TOP'					=> 'Pujar amont',
+	'HOME'						=> 'Acuèlh',
+	'IN'						=> 'en',
+	'LAST_ARTICLE'				=> 'Darrièr article',
+	'LATEST_ARTICLES'			=> 'Darrièrs articles',
+	'LATEST_COMMENTS'			=> 'Darrièrs comentaris',
+	'MENU'						=> 'Menu',
+	'NAME'						=> 'Vòstre nom o pseudò',
+	'PLUXML_DESCRIPTION'		=> 'Blòg o Cms sens basa de donadas',
+	'POWERED_BY'				=> 'Generat per',
+	'READING_ART'				=> 'Legissètz l&#39;article',
+	'READING_TIME'				=> 'Temps de lectura estimat :',
+	'REPLY'						=> 'Responsa',
+	'REPLY_TO'					=> 'Responsa a',
+	'SAID'						=> 'a dich',
+	'SEND'						=> 'Mandar vòstre comentari',
+	'TAG'						=> 'Articles qu&#39;utilizan lo mot clau',
+	'TAGS'						=> 'Mots claus',
+	'TOP'						=> 'Naut de pagina',
+	'UPDATE_DATE'				=> 'Darrièra mesa a jorn :',
+	'WEBSITE'					=> 'Vòstre siti Internet (facultatiu)',
+	'WRITE_A_COMMENT'			=> 'Escriure un comentari',
+	'WRITTEN_BY'				=> 'Redigit per',
 );
 
-?>
