@@ -3,7 +3,7 @@
     <div class="p-1 md:p-4 w-full container md:mx-auto">
       <div class="flex items-center justify-between">
         <div class="z-[1000] flex items-center text-lg">
-          <a class="avatar" href="<?php $plxShow->racine() ?>">
+	<a class="avatar" href="<?php $plxShow->racine() ?>" title="<?php $plxShow->lang('HOME'); ?>">
             <?= substr($plxShow->plxMotor->aConf['title'], 0, 1); ?>
           </a>
           <div class="ml-3 block min-w-max">
@@ -23,7 +23,7 @@
           <div class="wrap-menu-top">
             <div class="wrap-menu-base">
               <ul class="menu_ul">
-                <?php $plxShow->staticList($plxShow->getLang('HOME'), '
+                <?php $plxShow->staticList('', '
                 <li class="menu-top">
                   <a href="#static_url" aria-label="#static_name" title="#static_name">#static_name</a>
                 </li>
