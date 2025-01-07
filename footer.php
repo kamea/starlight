@@ -2,7 +2,7 @@
 
 <footer class="footer">
   <div class="text-center">
-    <?php $plxShow->mainTitle('link'); ?> • <span class="italic"><?php $plxShow->subTitle(); ?></span> &copy; 2012-<?php echo date("Y"); ?> •
+    <?php $plxShow->mainTitle('link'); ?> • <span class="italic"><?php $plxShow->subTitle(); ?></span> &copy; 2012-<?= date("Y"); ?> •
     <?php $plxShow->lang('POWERED_BY') ?>&nbsp;<a href="<?= PLX_URL_REPO ?>" title="<?php $plxShow->lang('PLUXML_DESCRIPTION') ?>">PluXml</a>
     <?php $plxShow->lang('IN') ?>&nbsp;<?php $plxShow->chrono(); ?> •
     <a href="<?= $plxShow->urlRewrite('#top') ?>" title="<?= $plxShow->lang('GOTO_TOP') ?>">

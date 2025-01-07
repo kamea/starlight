@@ -9,7 +9,9 @@
           true
         );
       } else {
-        echo '<div class="no-img_art_loop"></div>';
+?>	      
+      <div class="no-img_art_loop"></div>
+<?php
       } ?>
     </a>
     <div class="p-6 flex grow flex-col">

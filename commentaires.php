@@ -1,7 +1,7 @@
 <?php if (!defined('PLX_ROOT')) exit; ?>
 <?php if ($plxShow->plxMotor->plxRecord_coms): ?>
   <h3 class="py-4" id="comments">
-    <?php echo $plxShow->artNbCom(); ?>
+    <?= $plxShow->artNbCom(); ?>
   </h3>
 
   <?php while ($plxShow->plxMotor->plxRecord_coms->loop()): # On boucle sur les commentaires 
@@ -9,7 +9,7 @@
     <div id="<?php $plxShow->comId(); ?>" class="comment <?php $plxShow->comLevel(); ?>">
       <div class="mt-4" id="com-<?php $plxShow->comIndex(); ?>">
 
-        <a class="nbcom" href="<?php $plxShow->ComUrl(); ?>" title="#<?php echo $plxShow->plxMotor->plxRecord_coms->i + 1 ?>">#<?php echo $plxShow->plxMotor->plxRecord_coms->i + 1 ?></a>&nbsp;
+        <a class="nbcom" href="<?php $plxShow->ComUrl(); ?>" title="#<?= $plxShow->plxMotor->plxRecord_coms->i + 1 ?>">#<?= $plxShow->plxMotor->plxRecord_coms->i + 1 ?></a>&nbsp;
         <time datetime="<?php $plxShow->comDate('#num_year(4)-#num_month-#num_day #hour:#minute'); ?>"><?php $plxShow->comDate('#day #num_day #month #num_year(4) - #hour:#minute'); ?></time> -
         <?php $plxShow->comAuthor('link'); ?>
         <?php $plxShow->lang('SAID'); ?> :
@@ -56,7 +56,7 @@
         </div>
       </div>
       <div class="comment_message">
-        <label for="id_rep"><strong><?php echo $plxShow->lang('ANTISPAM_WARNING') ?></strong></label>
+        <label for="id_rep"><strong><?php $plxShow->lang('ANTISPAM_WARNING') ?></strong></label>
         <div>
           <?php $plxShow->capchaQ(); ?>
           <input class="dark:bg-secondary-600 dark:text-white" id="id_rep" name="rep" type="text" size="2" maxlength="120" style="display: inline">
