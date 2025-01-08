@@ -937,6 +937,7 @@ ul li ul.sub-menu:is(.dark *) {
 }
 
 .btn:hover {
+  cursor: pointer;
   --tw-bg-opacity: 1;
   background-color: rgb(74 64 147 / var(--tw-bg-opacity, 1));
 }
@@ -2131,11 +2132,6 @@ h2:target,
 
 .bg-black\/20 {
   background-color: rgb(0 0 0 / 0.2);
-}
-
-.bg-primary-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(123 118 222 / var(--tw-bg-opacity, 1));
 }
 
 .bg-primary-800 {

@@ -71,12 +71,12 @@
 
       <div class="py-4">
         <input type="checkbox" id="rgpd" name="rgpd" value="rgpd" required>
-        <label class="pl-2 italic" for="rgpd">En fournissant votre email, votre pseudo et l'URL de votre site internet, vous consentez à leur affichage public sur ce site. Vos données seront utilisées uniquement dans ce cadre et ne seront pas transmises à des tiers sans votre accord. Vous pouvez demander à tout moment leur suppression en nous contactant à l’adresse suivante : [xxxx_AT_xxxxxxx.fr]. Pour en savoir plus sur vos droits et la manière dont vos données sont traitées, consultez notre
-          <a href="">politique de confidentialité</a>.</label>
+        <label class="pl-2 italic" for="rgpd"><?php $plxShow->lang('RGPD'); ?>
+
+        </label>
       </div>
 
-      <input class="cursor-pointer rounded bg-primary-500 p-4 text-lg font-bold text-white" type="submit" value="<?php $plxShow->lang('SEND') ?>">
-
+      <input class="btn" type="submit" value="<?php $plxShow->lang('SEND') ?>">
 
     </form>
   </div>

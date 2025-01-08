@@ -47,6 +47,19 @@ $LANG = array(
 'SEND'					=> 'Enviar',
 'COMMENTS_CLOSED'		=> 'Comentarios cerrados',
 'ANTISPAM_WARNING'		=> 'Chequeo anti-spam',
+'RGPD'                  => 'Al proporcionar tu correo electrónico, apodo y URL de tu sitio web, aceptas que se muestren en este sitio. Contáctanos si deseas que se elimine tu información.',  
+
+'REPLY'                 => 'Responder',  
+'REPLY_TO'              => 'Responder a',  
+'CANCEL'                => 'Cancelar',  
+
+# article  
+'READING_ART'           => 'Leer el artículo',  
+'READING_TIME'          => 'Tiempo estimado de lectura: ',  
+'UPDATE_DATE'           => 'Última actualización: ',  
+'ART_AUTHOR'            => 'Lista de artículos escritos por',  
+'ART_PROPOSAL'          => 'También te pueden interesar estos artículos',  
+'AUTHORS'               => 'Autores', 
 );
 
 ?>

@@ -46,6 +46,20 @@ $LANG = array(
 'SEND'					=> 'Versenden',
 'COMMENTS_CLOSED'		=> 'Die Kommentare sind geschlossen',
 'ANTISPAM_WARNING'		=> 'Anti-Spam',
+'RGPD'                  => 'Indem Sie Ihre E-Mail-Adresse, Ihren Benutzernamen und die URL Ihrer Website angeben, stimmen Sie deren Anzeige auf dieser Website zu. Kontaktieren Sie uns, wenn Sie Ihre Informationen entfernen lassen möchten.',
+
+'REPLY'                 => 'Antworten',
+'REPLY_TO'              => 'Antworten an',
+'CANCEL'                => 'Zurück',
+
+# article
+'READING_ART'           => 'Artikel lesen',
+'READING_TIME'          => 'Geschätzte Lesezeit: ',
+'UPDATE_DATE'           => 'Letzte Aktualisierung: ',
+'ART_AUTHOR'            => 'Liste der Artikel von',
+'ART_PROPOSAL'          => 'Schauen Sie sich auch diese Artikel an',
+'AUTHORS'               => 'Autoren',
+
 );
 
 ?>

@@ -46,6 +46,19 @@ $LANG = array(
 'SEND'					=> 'Mandar vòstre comentari',
 'COMMENTS_CLOSED'		=> 'Los comentaris son barrats',
 'ANTISPAM_WARNING'		=> 'Verificacion anti-spam',
+'RGPD'                  => 'En fornissent vòstre e-mail, vòstre pseudonim e l\'URL de vòstre site internet, acceptatz lor afichatge sus aqueste site. Contactatz-nos se volètz que vòstras informacions sián suprimidas.',  
+
+'REPLY'                 => 'Respondre',  
+'REPLY_TO'              => 'Respondre a',  
+'CANCEL'                => 'Tornar',  
+
+# article  
+'READING_ART'           => 'Legir l\'article',  
+'READING_TIME'          => 'Temps estimat de lectura : ',  
+'UPDATE_DATE'           => 'Darrièra mesa a jorn : ',  
+'ART_AUTHOR'            => 'Lista dels articles redigits per',  
+'ART_PROPOSAL'          => 'Veire tanben aquestes articles',  
+'AUTHORS'               => 'Autors',  
 );
 
 ?>

@@ -48,6 +48,7 @@ $LANG = array(
 'SEND'					=> 'Envoyer votre commentaire',
 'COMMENTS_CLOSED'		=> 'Les commentaires sont fermés',
 'ANTISPAM_WARNING'		=> 'Vérification anti-spam',
+'RGPD'                  => 'En fournissant votre email, votre pseudo et l\'URL de votre site internet, vous acceptez leur affichage sur ce site. Contactez-nous si vous souhaitez que vos informations soient supprimées.',
 
 'REPLY'					=> 'Répondre',
 'REPLY_TO'				=> 'Répondre à',
@@ -59,7 +60,7 @@ $LANG = array(
 'UPDATE_DATE'           => 'Dernière mise à jour : ',
 'ART_AUTHOR'            => 'Liste des articles rédigés par',
 'ART_PROPOSAL'          => 'Découvrez aussi ces articles',
-'AUTHORS'               => 'Auteurs',
+'AUTHORS'               => 'Auteurs', 
 );
 
 ?>

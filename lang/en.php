@@ -46,13 +46,19 @@ $LANG = array(
 'SEND'					=> 'Send',
 'COMMENTS_CLOSED'		=> 'Comments are closed',
 'ANTISPAM_WARNING'		=> 'Anti-spam checking',
+'RGPD'                  => 'By providing your email, username, and website URL, you agree to their display on this site. Contact us if you wish to have your information removed',
+
+
+'REPLY'                 => 'Reply',
+'REPLY_TO'              => 'Reply to',
+'CANCEL'                => 'Cancel',
 
 # article
 'READING_ART'           => 'Read the article',
-'READING_TIME'          => 'Estimated reading time : ',
-'UPDATE_DATE'           => 'Last update : ',
+'READING_TIME'          => 'Estimated reading time: ',
+'UPDATE_DATE'           => 'Last update: ',
 'ART_AUTHOR'            => 'List of articles written by',
-'ART_PROPOSAL'          => 'You can also read these articles',
+'ART_PROPOSAL'          => 'Check out these articles too',
 'AUTHORS'               => 'Authors',
 
 );
