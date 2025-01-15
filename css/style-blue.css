@@ -1168,9 +1168,7 @@ a img.art_thumbnail {
   opacity: 0.7;
 }
 
-.home-art,
-  .categorie-art,
-  .tag-art {
+.art-wrap {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -1183,42 +1181,32 @@ a img.art_thumbnail {
 }
 
 @media (min-width: 768px) {
-  .home-art,
-  .categorie-art,
-  .tag-art {
+  .art-wrap {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
 @media (min-width: 1280px) {
-  .home-art,
-  .categorie-art,
-  .tag-art {
+  .art-wrap {
     padding-left: 0px;
     padding-right: 0px;
   }
 }
 
-.home-art_grid,
-  .caterorie-art_grid,
-  .tag-art_grid {
+.grid-art {
   display: grid;
   gap: 3rem;
 }
 
 @media (min-width: 640px) {
-  .home-art_grid,
-  .caterorie-art_grid,
-  .tag-art_grid {
+  .grid-art {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1280px) {
-  .home-art_grid,
-  .caterorie-art_grid,
-  .tag-art_grid {
+  .grid-art {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
@@ -2076,10 +2064,6 @@ h2:target,
   justify-content: space-between;
 }
 
-.gap-10 {
-  gap: 2.5rem;
-}
-
 .gap-16 {
   gap: 4rem;
 }
@@ -2205,11 +2189,6 @@ h2:target,
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .py-24 {
