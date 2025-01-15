@@ -12,7 +12,7 @@
     </div>
   </div>
   <div class="art-wrap">
-    <div class="grid-art">
+    <div class="art-grid">
       <?php include 'inc/art_loop.php' ?>
     </div>
   </div>

@@ -14,7 +14,7 @@
   </div>
   <!-- Affichage des articles -->
   <div class="art-wrap">
-    <div class="grid-art">
+    <div class="art-grid">
       <!-- On boucle sur les articles-->
       <?php include 'inc/art_loop.php' ?>
     </div>
