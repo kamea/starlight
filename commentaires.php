@@ -55,13 +55,15 @@
 <?php $plxShow->comGet('content', ''); ?></textarea>
         </div>
       </div>
-      <div class="comment_message">
-        <label for="id_rep"><strong><?php echo $plxShow->lang('ANTISPAM_WARNING') ?></strong></label>
-        <div>
-          <?php $plxShow->capchaQ(); ?>
-          <input class="dark:bg-secondary-600 dark:text-white" id="id_rep" name="rep" type="text" size="2" maxlength="120" style="display: inline">
+      <?php if ($plxShow->plxMotor->aConf['capcha']) : ?>
+        <div class="comment_message">
+          <label for="id_rep"><strong><?php echo $plxShow->lang('ANTISPAM_WARNING') ?></strong></label>
+          <div>
+            <?php $plxShow->capchaQ(); ?>
+            <input class="dark:bg-secondary-600 dark:text-white" id="id_rep" name="rep" type="text" size="2" maxlength="120" style="display: inline">
+          </div>
         </div>
-      </div>
+      <?php endif; ?>
       <?php $plxShow->comMessage('
     <p id="com_message" class="comment_message">
       #com_message

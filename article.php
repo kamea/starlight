@@ -1,5 +1,4 @@
 <?php include 'header.php' ?>
-
 <div class="relative max-w-7xl mx-auto py-12 md:py-24">
   <div class="text-center pb-24 mylink">
     <h1 class="font-bold pb-4"><?php $plxShow->artTitle(); ?></h1>
@@ -60,8 +59,6 @@
         </div>
       </div>
     </div>
-
-
     <div class="xl:col-span-1">
       <?php include 'sidebar.php' ?>
     </div>
