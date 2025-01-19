@@ -11,13 +11,8 @@
       <?php $plxShow->catList('', '<a id="#cat_id" href="#cat_url" class="btn relative" title="#cat_name">#cat_name</a>'); ?>
     </div>
   </div>
-  <div class="art-wrap">
-    <div class="art-grid">
-      <?php include 'inc/art_loop.php' ?>
-    </div>
-  </div>
-  <nav class="pagination text-center pb-16">
-    <?php $plxShow->pagination(); ?>
-  </nav>
+
+  <?php include 'inc/art_loop.php' ?>
+
 </main>
 <?php include 'footer.php' ?>

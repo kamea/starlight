@@ -34,6 +34,8 @@ $LANG = array(
 'WRITTEN_BY'			=> 'Redigit per',
 'CLASSIFIED_IN'			=> 'Classat dins',
 'TAGS'					=> 'Mots claus',
+'TAG'					=> 'Articles qu’utilizan lo mot clau',
+'LAST_UPDATE'			=> 'Darrièra mesa a jorn',
 
 # commentaires.php
 'SAID'					=> 'a dich',

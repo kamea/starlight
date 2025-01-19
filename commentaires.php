@@ -8,12 +8,10 @@
   ?>
     <div id="<?php $plxShow->comId(); ?>" class="comment <?php $plxShow->comLevel(); ?>">
       <div class="mt-4" id="com-<?php $plxShow->comIndex(); ?>">
-
         <a class="nbcom" href="<?php $plxShow->ComUrl(); ?>" title="#<?php echo $plxShow->plxMotor->plxRecord_coms->i + 1 ?>">#<?php echo $plxShow->plxMotor->plxRecord_coms->i + 1 ?></a>&nbsp;
         <time datetime="<?php $plxShow->comDate('#num_year(4)-#num_month-#num_day #hour:#minute'); ?>"><?php $plxShow->comDate('#day #num_day #month #num_year(4) - #hour:#minute'); ?></time> -
         <?php $plxShow->comAuthor('link'); ?>
         <?php $plxShow->lang('SAID'); ?> :
-
         <blockquote class="p-2">
           <p class="p-4 rounded border border-primary-400 dark:border-primary-800 type-<?php $plxShow->comType(); ?>"><?php $plxShow->comContent(); ?></p>
         </blockquote>
@@ -51,15 +49,14 @@
         <div class="col-span-full">
           <div id="id_answer" class="italic"></div>
           <label for="id_content" class="lab_com"><?php $plxShow->lang('COMMENT') ?> :</label>
-          <textarea class="input" id="id_content" name="content" cols="35" rows="6">
-<?php $plxShow->comGet('content', ''); ?></textarea>
+          <textarea class="input" id="id_content" name="content" cols="35" rows="6"><?php $plxShow->comGet('content', ''); ?></textarea>
         </div>
       </div>
       <?php if ($plxShow->plxMotor->aConf['capcha']) : ?>
+        <?php $plxShow->capchaQ(); ?>
         <div class="comment_message">
           <label for="id_rep"><strong><?php echo $plxShow->lang('ANTISPAM_WARNING') ?></strong></label>
           <div>
-            <?php $plxShow->capchaQ(); ?>
             <input class="dark:bg-secondary-600 dark:text-white" id="id_rep" name="rep" type="text" size="2" maxlength="120" style="display: inline">
           </div>
         </div>

@@ -1347,6 +1347,24 @@ a img.art_thumbnail {
   }
 }
 
+.archive_art-date {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 66.666667%;
+  border-bottom-right-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity, 1));
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 /* Aside*/
 
 .wrap_aside {
@@ -1418,14 +1436,14 @@ a img.art_thumbnail {
   margin-bottom: 1.25rem;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
+  background-color: rgb(252 231 243 / var(--tw-bg-opacity, 1));
   padding: 1.25rem;
   --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity, 1));
+  color: rgb(190 24 93 / var(--tw-text-opacity, 1));
 }
 
 .comment_message:is(.dark *) {
-  background-color: rgb(100 116 139 / 0.1);
+  background-color: rgb(236 72 153 / 0.1);
 }
 
 .footer {
@@ -1711,14 +1729,14 @@ td:is(.dark *) {
 
 pre {
   white-space: pre-wrap;
-  background-color: rgb(100 116 139 / 0.1);
+  background-color: rgb(236 72 153 / 0.1);
   padding: 1.25rem;
 }
 
 code {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --tw-text-opacity: 1;
-  color: rgb(71 85 105 / var(--tw-text-opacity, 1));
+  color: rgb(219 39 119 / var(--tw-text-opacity, 1));
 }
 
 h2:target,
@@ -1833,18 +1851,6 @@ h2:target,
     line-height: 1;
     font-size: 100px;
   }
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
 }
 
 .static {
@@ -1984,6 +1990,10 @@ h2:target,
 
 .h-full {
   height: 100%;
+}
+
+.min-h-28 {
+  min-height: 7rem;
 }
 
 .w-1\/2 {
@@ -2191,11 +2201,6 @@ h2:target,
   padding-bottom: 3rem;
 }
 
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -2263,11 +2268,6 @@ h2:target,
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-base {
@@ -2370,7 +2370,7 @@ h2:target,
 
 .dark\:bg-secondary-600:is(.dark *) {
   --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity, 1));
+  background-color: rgb(219 39 119 / var(--tw-bg-opacity, 1));
 }
 
 .dark\:text-primary-500:is(.dark *) {

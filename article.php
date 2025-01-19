@@ -5,7 +5,7 @@
     <?php $plxShow->lang('WRITTEN_BY'); ?> <?php $plxShow->artAuthor() ?><span class="mx-2">|</span>
     <?php $plxShow->artCat(' • ') ?>
     <p class="text-italic">
-      Dernière mise à jour : <time datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>">
+    <?php $plxShow->lang('LAST_UPDATE'); ?>: <time datetime="<?php $plxShow->artDate('#num_year(4)-#num_month-#num_day'); ?>">
         <?php $plxShow->artDate('#num_day #month #num_year(4)'); ?>
       </time>
     </p>

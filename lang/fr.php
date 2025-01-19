@@ -36,6 +36,7 @@ $LANG = array(
 'CLASSIFIED_IN'			=> 'Classé dans',
 'TAGS'					=> 'Mots clés',
 'TAG'					=> 'Articles qui utilisent le mot clé',
+'LAST_UPDATE'			=> 'Dernière mise à jour',
 
 # commentaires.php
 'SAID'					=> 'a dit',

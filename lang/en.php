@@ -34,6 +34,8 @@ $LANG = array(
 'WRITTEN_BY'			=> 'Written by',
 'CLASSIFIED_IN'			=> 'Classified in',
 'TAGS'					=> 'Tags',
+'TAG'					=> 'Articles using the keyword',
+'LAST_UPDATE'           => 'Last update',
 
 # commentaires.php
 'SAID'					=> 'said',
